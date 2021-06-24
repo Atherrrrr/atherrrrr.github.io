@@ -1,2 +1,2 @@
 # maheratherilyas
-My personal webite
+My personal website
