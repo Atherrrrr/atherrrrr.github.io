@@ -1575,12 +1575,12 @@ input[type='checkbox'] {
 	transition: all 0.2s ease;
 }
 
-.android {
+.other {
 	position: absolute;
 	left: 0;
 	width: 6rem;
 	height: 6rem;
-	background: url('../images/android_logo.svg') center center no-repeat;
+	background: url('../images/otherIcon.svg') center center no-repeat;
 	background-size: 6rem 6rem;
 	transition: all 0.2s ease;
 }
