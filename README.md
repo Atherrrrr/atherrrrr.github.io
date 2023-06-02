@@ -1,2 +1,0 @@
-# maheratherilyas
-My personal website
