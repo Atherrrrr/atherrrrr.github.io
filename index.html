@@ -1,979 +1,568 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Hi! I am Maher Athar Ilyas, an international undergraduate CS Student at Bilkent University. Looking for freelance opportunities in Full-Stack, Android or Software development.">
-    <meta name="author" content="Maher Athar Ilyas - Bilkent University (Ankara)">
-
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-	<meta property="og:site_name" content="Maher Athar Ilyas" /> <!-- website name -->
-	<meta property="og:site" content="https://atherrrrr.github.io/" /> <!-- website link -->
-	<meta property="og:title" content="Maher Athar Ilyas"/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="Hi! I am Maher Athar Ilyas, an international undergraduate CS Student at Bilkent University. Looking for freelance opportunities in Full-Stack, Android or Software development." /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="images/logo.jpg" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="https://atherrrrr.github.io/" /> <!-- where do you want your post to link to -->
-	<meta property="og:type" content="Personal Website" />
-
-    <!-- Website Title -->
-    <title>Maher Athar Ilyas || CS Student at Bilkent || Crypto-Automation Expert & Full-Stack Developer</title>
-    
-    <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
-    <link href="css/swiper.css" rel="stylesheet">
-	<link href="css/magnific-popup.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-	
-	<!-- Favicon  -->
-    <link rel="icon" href="images/logo.svg">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maher Athar Ilyas · Applied AI Engineer</title>
+<meta name="description" content="Maher Athar Ilyas, Applied AI Engineer building LLM inference platforms and AI automation.">
+<link rel="canonical" href="https://atherrrrr.github.io/">
+<meta name="theme-color" content="#14130F">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Maher Athar Ilyas · Applied AI Engineer">
+<meta property="og:description" content="Applied AI Engineer building LLM inference platforms and AI automation.">
+<meta property="og:url" content="https://atherrrrr.github.io/">
+<script>
+(function () {
+  var d = document.documentElement;
+  d.classList.add('js');
+  try {
+    var t = localStorage.getItem('theme');
+    if (t === 'light' || t === 'dark') d.setAttribute('data-theme', t);
+  } catch (e) {}
+})();
+</script>
+<link rel="preload" href="assets/fonts/source-serif-4-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="alternate" type="text/markdown" href="index.md" title="Agent view (markdown)">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Maher Athar Ilyas",
+  "jobTitle": "Applied AI Engineer",
+  "url": "https://atherrrrr.github.io/",
+  "knowsAbout": [
+    "Large language models",
+    "LLM inference",
+    "AI automation",
+    "Model Context Protocol",
+    "Web accessibility testing",
+    "Machine learning",
+    "Full-stack development"
+  ],
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Bilkent University" },
+    { "@type": "CollegeOrUniversity", "name": "Saarland University" }
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/athar-ilyas",
+    "https://github.com/atherrrrr"
+  ]
+}
+</script>
+<script src="assets/js/site.js" defer></script>
 </head>
-<body data-spy="scroll" data-target=".fixed-top">
-    
-    <!-- Preloader -->
-	<div class="spinner-wrapper">
-        <div class="spinner">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
-        </div>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="#top">Maher Athar Ilyas</a>
+    <nav class="nav" aria-label="Sections" data-human>
+      <a class="label-link" href="#work">Work</a>
+      <a class="label-link" href="#experience">Experience</a>
+      <a class="label-link" href="#education">Education</a>
+    </nav>
+    <div class="toggles js-only">
+      <button class="toggle" type="button" aria-pressed="true" data-theme-toggle>
+        <span class="toggle__dot" aria-hidden="true"></span><span>Dark mode</span>
+      </button>
+      <button class="toggle" type="button" role="switch" aria-checked="false" data-view-toggle>
+        <span class="switch" aria-hidden="true"><span class="switch__knob"></span></span><span>View as agent</span>
+      </button>
     </div>
-    <!-- end of preloader -->
-    
+  </div>
+</header>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
-        <!-- Text Logo - Use this if you don't have a graphic logo -->
-        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Maher Athar Ilyas</a> -->
+<main id="main" tabindex="-1">
+<div data-human>
 
-        <!-- Image Logo -->
-        <!-- <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="Brand/Perosonal Logo"></a> -->
-        <a class="navbar-brand logo-text page-scroll" href="index.html" >Maher Athar Ilyas</a>
-        
-        <!-- Mobile Menu Toggle Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" Maher Athar Ilyas-controls="navbarsExampleDefault" Maher Athar Ilyas-expanded="false" Maher Athar Ilyas-label="Toggle navigation">
-            <span class="navbar-toggler-awesome fas fa-bars"></span>
-            <span class="navbar-toggler-awesome fas fa-times"></span>
+<section class="wrap hero" aria-labelledby="name">
+  <div class="hero__top">
+    <div class="hero__text">
+      <p class="label">Applied AI Engineer · <span class="ink">Germany</span></p>
+      <h1 id="name" class="hero__name">Maher Athar Ilyas</h1>
+      <p class="hero__lede">Applied AI Engineer building LLM inference platforms and AI automation.</p>
+      <p class="hero__quote">If something can be automated, I'll find a way.</p>
+      <div class="actions">
+        <a class="btn btn--primary" href="cv/Maher-Athar-Ilyas-CV.pdf" download>
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2v8M4.5 6.5 8 10l3.5-3.5M2.5 13.5h11"/></svg><span>Download CV</span>
+        </a>
+        <a class="btn" href="https://www.linkedin.com/in/athar-ilyas" rel="me">
+          <span>LinkedIn</span><svg aria-hidden="true" width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 3h8v8M13 3 3 13"/></svg>
+        </a>
+        <a class="btn" href="https://github.com/atherrrrr" rel="me">
+          <span>GitHub</span><svg aria-hidden="true" width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 3h8v8M13 3 3 13"/></svg>
+        </a>
+        <button class="btn js-only" type="button" data-copy-email>
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5.5" y="5.5" width="8" height="8"/><path d="M10.5 3V2.5h-8v8H3"/></svg><span data-copy-label>Copy email</span>
         </button>
-        <!-- end of mobile menu toggle button -->
+      </div>
+    </div>
+    <figure class="hero__figure">
+      <div class="media media--portrait">
+        <img src="assets/media/placeholder.svg" alt="Portrait of Maher Athar Ilyas (placeholder)" width="800" height="1000">
+        <span class="media__tag" aria-hidden="true">Photo slot · 4/5 portrait</span>
+      </div>
+      <figcaption class="label">Fig. 0 · Maher Athar Ilyas</figcaption>
+    </figure>
+  </div>
 
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#intro">INTRO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#skills">SKILLS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" 
-                    href="#projects">PROJECTS<a>                       
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll"  href="#experience">EXPERIENCE</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#honors">HONORS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#contact">GET IN TOUCH</a>
-                </li>
-            </ul>
+  <dl class="figures" aria-label="Key figures">
+    <div class="figure">
+      <dt class="label">Spec 01 · Experience</dt>
+      <dd class="figure__value"><span class="bar">5+ yrs</span></dd>
+      <dd class="figure__note">building production software, 3+ in applied AI</dd>
+    </div>
+    <div class="figure">
+      <dt class="label">Spec 02 · Ownership</dt>
+      <dd class="figure__value"><span class="bar">Sole architect</span></dd>
+      <dd class="figure__note">of the LLM platform behind every AI feature in a commercial QA product</dd>
+    </div>
+    <div class="figure">
+      <dt class="label">Spec 03 · Automation</dt>
+      <dd class="figure__value"><span class="bar">#1</span></dd>
+      <dd class="figure__note">most W3C accessibility test rules covered of any automated tool, automated with LLM and vision models</dd>
+    </div>
+  </dl>
+</section>
+
+<section class="wrap section" id="about" aria-labelledby="about-h">
+  <div class="section__grid">
+    <div class="section__head">
+      <span class="badge">01</span>
+      <h2 class="section__title" id="about-h">About</h2>
+    </div>
+    <div class="section__body">
+      <div class="prose">
+        <p class="prose__lead">I've automated everything from crypto trading bots in college, to development workflows and manual audit processes with AI at work, to my own daily routines. I work across the full pipeline, from system design and AI integration to the user experience of what gets shipped, and I iterate with users and POCs until a solution actually delivers. I care more about whether something solves the problem cleanly than what stack it's built on.</p>
+        <div class="cta">
+          <p class="cta__text">Working on an automation or AI problem? Let's talk.</p>
+          <div class="email-row">
+            <span class="email">maheratharilyas@gmail.com</span>
+            <button class="btn js-only" type="button" data-copy-email>
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5.5" y="5.5" width="8" height="8"/><path d="M10.5 3V2.5h-8v8H3"/></svg><span data-copy-label>Copy email</span>
+            </button>
+          </div>
         </div>
-    </nav> <!-- end of navbar -->
-    <!-- end of navbar -->
+      </div>
+    </div>
+  </div>
+</section>
 
+<section class="wrap section" id="work" aria-labelledby="work-h">
+  <div class="section__grid">
+    <div class="section__head">
+      <span class="badge">02</span>
+      <h2 class="section__title" id="work-h">Selected work</h2>
+    </div>
+    <div class="section__body">
+      <div class="work">
+        <div class="cards">
 
-    <!-- Header -->
-    <header id="header" class="header">
-        <div class="header-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="text-container">
-                            <img class="cover-image" src="images/new_formal.jpg" alt="DP">
-                            <h1> <span id="js-rotating">AUTOMATED SYSTEMS, CRYPTO TRADING BOT, SOFTWARE , FULL-STACK , WEB, FRONT-END, BACK-END</span> DEVELOPER </h1>
-                            <p class="p-heading p-large">Hi! I am Maher Athar Ilyas</p>
-                            <a target="_blank" class="btn-solid-lg page-scroll"  href="Maher_Athar_Ilyas_Resume.pdf">View Resume</a>
-                        </div>
-                    </div> <!-- end of col -->
-                </div> <!-- end of row -->
-            </div> <!-- end of container -->
-        </div> <!-- end of header-content -->
-    </header> <!-- end of header -->
-    <!-- end of header -->
+          <article class="card">
+            <div class="card__meta label"><span>P-01</span><span>2025 <span aria-hidden="true">→</span><span class="sr">to</span> now</span></div>
+            <div class="media media--video">
+              <video class="media__video" muted loop playsinline controls preload="none" width="1280" height="720" poster="assets/media/lifeos-demo-poster.webp" aria-label="Life OS demo: calendar, habit tracker, smartwatch, bank export and Notion feed one MCP server on Cloudflare Workers, then Claude uses its tools to answer questions and write a weekly review of time, habits, health and money.">
+                <source src="assets/media/lifeos-demo.mp4" type="video/mp4">
+              </video>
+              <button class="media__control js-only" type="button" data-video-toggle>Play demo</button>
+            </div>
+            <div class="card__title-row">
+              <h3 class="card__title"><button class="card-toggle" type="button" aria-expanded="true" aria-controls="more-lifeos">Life OS</button></h3>
+              <span class="card__hint js-only" aria-hidden="true">− Less</span>
+            </div>
+            <p class="card__summary">Personal analytics MCP server and reporting agent. Normalizes calendar, habits, finance and wearable health data into scored daily records.</p>
+            <dl class="facts">
+              <dt class="label facts__result">Result</dt><dd>Weekly and monthly reviews written automatically by agent skills.</dd>
+              <dt class="label">Stack</dt><dd class="mono">MCP · Cloudflare Workers</dd>
+            </dl>
+            <div class="card__more" id="more-lifeos" data-collapsible>
+              <ul class="ticks">
+                <li>Four sources in one schema: calendar time logs, habit tracking, finance exports and wearable health data.</li>
+                <li>Each day becomes one scored record, so weeks and months are directly comparable.</li>
+                <li>Agent skills query the MCP tools and write the weekly and monthly reviews without manual work.</li>
+              </ul>
+            </div>
+          </article>
 
-    <!-- Intro -->
-    <div id="intro" class="basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="text-container">
-                        <div class="section-title">INTRO</div>
-                        <h2>Let Me Introduce Myself</h2>
-                        <p> I'm Athar, an innovative and dynamic junior Computer Engineering major at Bilkent University (Turkey). As an entrepreneurially-minded and solution-focused individual, I bring a wealth of experience in Automation/Scripting, Full-Stack, Android app, Desktop application, and Software Development to the table. My passion for intricate and challenging programming problems drives me to excel and deliver exceptional results. </p>
-                        <p>I look forward to discussing how my skills and expertise can contribute to your organization's success.</p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-7">
-                    <div class="image-container">
-                        <a target="_blank" href ="https://w3.bilkent.edu.tr/bilkent/" >
-                            <img class="img-fluid" src="images/bilkent_uni.jpg" alt="Bilkent University">
-                        </a>
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
-    <!-- end of intro -->
+          <article class="card">
+            <div class="card__meta label"><span>P-02</span><span>2024</span></div>
+            <div class="media media--video">
+              <video class="media__video" muted loop playsinline controls preload="none" width="1280" height="720" poster="assets/media/weprep-demo-poster.webp" aria-label="WePrep demo: an AI interviewer asks questions on camera, three models score video, audio and words, and the app shows six scores, per-second charts, written feedback and a practice roadmap, followed by screens from the working app.">
+                <source src="assets/media/weprep-demo.mp4" type="video/mp4">
+              </video>
+              <button class="media__control js-only" type="button" data-video-toggle>Play demo</button>
+            </div>
+            <div class="card__title-row">
+              <h3 class="card__title"><button class="card-toggle" type="button" aria-expanded="true" aria-controls="more-weprep">WePrep</button></h3>
+              <span class="card__hint js-only" aria-hidden="true">− Less</span>
+            </div>
+            <p class="card__summary">AI interview coach. LLM-generated questions, asked by a lip-synced synthetic interviewer, with every answer scored.</p>
+            <dl class="facts">
+              <dt class="label facts__result">Result</dt><dd>1st place, Bilkentpreneurs Challenge 2024 · Best Data Science Project.</dd>
+              <dt class="label">Stack</dt><dd class="mono">FastAPI · Next.js · MongoDB</dd>
+            </dl>
+            <div class="card__more" id="more-weprep" data-collapsible>
+              <ul class="ticks">
+                <li>An LLM generates the interview questions.</li>
+                <li>A lip-synced synthetic interviewer asks them on screen.</li>
+                <li>CNN-based models score emotion and body language while the candidate answers.</li>
+                <li>An LLM evaluates the content of each answer.</li>
+              </ul>
+            </div>
+          </article>
 
-    <!-- Skills  -->
+          <article class="card">
+            <div class="card__meta label"><span>P-03</span><span>2026 <span aria-hidden="true">→</span><span class="sr">to</span> now</span></div>
+            <div class="media media--video">
+              <video class="media__video" muted loop playsinline controls preload="none" width="1280" height="720" poster="assets/media/campuspilot-demo-poster.webp" aria-label="School management system demo: 17 years of records move from a legacy Oracle database into one system for admissions, fees, attendance, exams, payroll and parents, with challan runs, daily usage numbers and screens from the live app.">
+                <source src="assets/media/campuspilot-demo.mp4" type="video/mp4">
+              </video>
+              <button class="media__control js-only" type="button" data-video-toggle>Play demo</button>
+            </div>
+            <div class="card__title-row">
+              <h3 class="card__title"><button class="card-toggle" type="button" aria-expanded="true" aria-controls="more-school">School management system</button></h3>
+              <span class="card__hint js-only" aria-hidden="true">− Less</span>
+            </div>
+            <p class="card__summary">CampusPilot, the system a four-branch school runs on: admissions, fees, attendance, exams, payroll and a parent app.</p>
+            <dl class="facts">
+              <dt class="label facts__result">Result</dt><dd>In production since June 2026 with 1,235 active students across 4 branches.</dd>
+              <dt class="label">Stack</dt><dd class="mono">Spring Boot · PostgreSQL · Next.js · Docker</dd>
+            </dl>
+            <div class="card__more" id="more-school" data-collapsible>
+              <ul class="ticks">
+                <li>Migrated 17 years of records from a legacy Oracle database: 4,688 students, 120,000+ fee challans and 189,000+ result entries.</li>
+                <li>Monthly fee challans generated per branch and class as print-ready PDFs; 3,730 so far.</li>
+                <li>Since go-live, staff have recorded 44,000+ attendance marks, 11,900+ results and 5,500+ payments.</li>
+                <li>Six roles and 116 permissions keep each staff member to their own branch and tasks.</li>
+              </ul>
+            </div>
+          </article>
 
-    <!-- end of intro -->
+          <article class="card">
+            <div class="card__meta label"><span>P-04</span><span>2024</span></div>
+            <div class="media media--video">
+              <video class="media__video" muted loop playsinline controls preload="none" width="1280" height="720" poster="assets/media/skillsprint-demo-poster.webp" aria-label="SkillSprint demo: a typed goal becomes an LLM-generated roadmap of phases, lessons and quizzes, with curated resources, progress scores and a serverless AWS architecture, followed by screens from the working app.">
+                <source src="assets/media/skillsprint-demo.mp4" type="video/mp4">
+              </video>
+              <button class="media__control js-only" type="button" data-video-toggle>Play demo</button>
+            </div>
+            <div class="card__title-row">
+              <h3 class="card__title"><button class="card-toggle" type="button" aria-expanded="true" aria-controls="more-skillsprint">SkillSprint</button></h3>
+              <span class="card__hint js-only" aria-hidden="true">− Less</span>
+            </div>
+            <p class="card__summary">Serverless micro-learning platform. LLM-generated skill roadmaps, then daily quizzes and flashcards to work through them.</p>
+            <dl class="facts">
+              <dt class="label facts__result">Result</dt><dd>Runner-up in the AWS University Engagement program, across 3 universities.</dd>
+              <dt class="label">Stack</dt><dd class="mono">AWS Lambda · DynamoDB · SageMaker · Next.js</dd>
+            </dl>
+            <div class="card__more" id="more-skillsprint" data-collapsible>
+              <ul class="ticks">
+                <li>An LLM generates a roadmap for the skill the learner picks.</li>
+                <li>Daily quizzes and flashcards keep sessions short and frequent.</li>
+                <li>Fully serverless on AWS Lambda and DynamoDB, with SageMaker and a Next.js front end.</li>
+              </ul>
+            </div>
+          </article>
 
+        </div>
 
-    <!-- Skills -->
-    <div id="skills" class="cards-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="text-container">
-                        <div class="section-title">SKILLS</div>
-                        <h2 style="margin-top: 10px;">Heres a comprehensive list of my skills</h2>
-                        <br>
-                    </div> <!-- end of text-container -->
-                    
-                    <!-- Card -->
-                    <div class="card">
-                        <span class="fa-stack">
-                            <span class="hexagon"></span>
-                            <i class="graphic"></i>
-                        </span>
-                        <div class="card-body">
-                            <h4 class="card-title">Front-End </h4>
-                            
-                                <ul >
-                                  <li>
-                                      <p >React.js</p>
-                                  </li>
-                                  <li>
-                                      <p >ANT Design</p>
-                                  </li>
-                                  <li>
-                                      <p >DevExtreme</p>
-                                  </li>
-                                  <li>
-                                    <p >Figma</p>
-                                  </li>
-                                    <li>
-                                        <p >HTML 5</p>
-                                    </li>
-                                    <li>
-                                        <p >CSS 3 </p>
-                                    </li>
-                                    <li>
-                                        <p >Bootstrap </p>
-                                    </li>
-                                    <li>
-                                        <p >JavaScript </p>
-                                    </li>
-                                    <li>
-                                        <p>XML </p>
-                                    </li>
-                                    <li>
-                                        <p>JSON</p>
-                                    </li>
-                                    <li>
-                                        <p>jQuery</p>
-                                    </li>
-                                    <li>
-                                        <p>Node.js</p>
-                                    </li>
-                                    <li>
-                                        <p>Rest API</p>
-                                    </li>
-                                </ul>
-                            
-                        </div>
-                    </div>
-                    <!-- end of card -->
+        <div class="archive-block">
+          <button class="btn js-only" type="button" aria-expanded="true" aria-controls="archive" data-archive-toggle>
+            <span data-archive-label>Hide extra projects</span><span class="mono" aria-hidden="true" data-archive-sign>−</span>
+          </button>
+          <div class="archive-panel" id="archive" data-collapsible>
+            <div class="cards">
 
-                    <!-- Card -->
-                    <div class="card">
-                        <span class="fa-stack">
-                            <span class="hexagon"></span>
-                            <i class="full-stack"></i>
-                        </span>
-                        <div class="card-body">
-                            <h4 class="card-title">Back-End </h4>
-                            <ul >
-                              <li >                                    
-                                  <p >Spring Boot</p>
-                              </li>
-                              <li >                                    
-                                  <p >Java</p>
-                              </li>
-                              <li >                                    
-                                <p >Django</p>
-                            </li>
-                              <li >                                    
-                                  <p >Python</p>
-                              </li>
-                              <li >                                    
-                                <p >PyTorch</p>
-                            </li>
-                              <li >                                    
-                                  <p >C++</p>
-                              </li>
-                              <li >                                    
-                                  <p >MySQL</p>
-                              </li>
-                                <li >                                    
-                                    <p >PostgrSQL</p>
-                                </li>
-                                <li >                                    
-                                    <p >PHP</p>
-                                </li>
-                                <li >                                    
-                                    <p >Docker</p>
-                                </li>
-                                <li >                                    
-                                    <p >Drools</p>
-                                </li>
-                                <li >                                    
-                                    <p >Postman</p>
-                                </li>
-                                <li >                                    
-                                    <p >MIPS Assembly</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- end of card -->
+          <article class="card">
+            <div class="card__meta label"><span>P-05</span><span>2026</span></div>
+            <div class="media media--video">
+              <video class="media__video" muted loop playsinline controls preload="none" width="1280" height="720" poster="assets/media/blitz-demo-poster.webp" aria-label="Blitz demo: one-tap German drills on a phone with combo and XP feedback, the driving test, exam and notes decks, five spaced repetition boxes, a tap-to-translate glossary, and new words added as one line through Claude Code.">
+                <source src="assets/media/blitz-demo.mp4" type="video/mp4">
+              </video>
+              <button class="media__control js-only" type="button" data-video-toggle>Play demo</button>
+            </div>
+            <div class="card__title-row">
+              <h3 class="card__title"><button class="card-toggle" type="button" aria-expanded="true" aria-controls="more-blitz">Blitz</button></h3>
+              <span class="card__hint js-only" aria-hidden="true">− Less</span>
+            </div>
+            <p class="card__summary">Fast multiple-choice drill app for learning German. Tap, see the answer, next. No animations in the way.</p>
+            <dl class="facts">
+              <dt class="label">Stack</dt><dd class="mono">TypeScript · Vite · PWA · Cloudflare Workers</dd>
+            </dl>
+            <div class="card__more" id="more-blitz" data-collapsible>
+              <ul class="ticks">
+                <li>Drills for articles, Dativ vs Akkusativ and word meaning in both directions.</li>
+                <li>Answer options are reshuffled every time, so you learn the word, not the button position.</li>
+                <li>Separate decks, so each session targets one set.</li>
+                <li>Word lists sync from a notes database occasionally; it is never a live dependency.</li>
+              </ul>
+            </div>
+          </article>
 
-                    <!-- Card -->
-                    <div class="card">
-                        <span class="fa-stack">
-                          <span class="hexagon"></span>
-                          <i class="graphic"></i>
-                        </span>
-                        <div class="card-body">
-                            <h4 class="card-title">Miscellaneous</h4>
-                            <ul >
-                              <li >                                    
-                                <p >TensorFlow</p>
-                            </li>
-                            <li >                                    
-                                <p >Ethical Hacking</p>
-                            </li>
-                                <li >                                    
-                                    <p >Git</p>
-                                </li>
-                                <li >                                    
-                                    <p >GitLab</p>
-                                </li>
-                                <li >                                    
-                                    <p >Android Studio</p>
-                                </li>
-                                <li >                                    
-                                    <p >Google Analytics</p>
-                                </li>
-                                <li >                                    
-                                    <p >Corel Draw</p>
-                                </li>
-                                <li >                                    
-                                    <p >Adobe Premiere Pro</p>
-                                </li>
-                                <li >                                    
-                                    <p >Facebook Ads</p>
-                                </li>
-                                <li >                                    
-                                    <p >SEO</p>
-                                </li>
-                                <li >                                    
-                                    <p >Social Media Marketing</p>
-                                </li>
-                                <li >                                    
-                                    <p >GitHub</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- end of card -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of cards-1 -->
-    <!-- end of description -->
-
-    
-    <!-- Projects -->
-	<div id="projects" class="filter">
-		<div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">PROJECTS</div>
-                    <h2>Passion and Practice Projects</h2>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- Filter -->
-                    <div class="button-group filters-button-group">
-                        <a class="button is-checked" data-filter="*"><span>SHOW ALL</span></a>
-                        <a class="button" data-filter=".desktop"><span>DESKTOP</span></a>
-                        <a class="button" data-filter=".android-app"><span>ANDROID</span></a>
-                        <a class="button" data-filter=".web"><span>WEB</span></a>
-                        <a class="button" data-filter=".misc"><span>MISCELLANEOUS</span></a>
-                    </div> <!-- end of button group -->
-                    <div class="grid">
-
-                        <div class="element-item misc">
-                            <a class="popup-with-move-anim" href="#project-1"><div class="element-item-overlay"><span>Cryptocurrency Trading Bot</span></div><img src="images/Crypto-Binance.jpg" alt="Crypto Trading Bot Based on Binance API"></a>
-                        </div>
-                        <div class="element-item desktop">
-                            <a class="popup-with-move-anim" href="#project-2"><div class="element-item-overlay"><span>Habinet</span></div><img src="images/Habinet.jpg" alt="Habinet - Social Media of Productivity"></a>
-                        </div>
-                        <div class="element-item web">
-                            <a class="popup-with-move-anim" href="#project-6"><div class="element-item-overlay"><span>BilCargo</span></div><img src="images/project-6-icon.jpg" alt="BilCargo"></a>
-                        </div>
-                        <div class="element-item web">
-                            <a class="popup-with-move-anim" href="#project-3"><div class="element-item-overlay"><span>Personal Website</span></div><img src="images/project-3.jpg" alt="Personal Website"></a>
-                        </div>
-                        <div class="element-item android-app">
-                            <a class="popup-with-move-anim" href="#project-4"><div class="element-item-overlay"><span>Smart-Music Player App</span></div><img src="images/project-4.jpg" alt="Project-4 Image"></a>
-                        </div>
-                        <div class="element-item misc">
-                            <a class="popup-with-move-anim" href="#project-5"><div class="element-item-overlay"><span>Programmable Processor</span></div><img src="images/project-5.jpg" alt="Project-3 Image"></a>
-                        </div>
-                        <div class="element-item misc">
-                          <a class="popup-with-move-anim" href="#project-7"><div class="element-item-overlay"><span>Automated Certificate Generator</span></div><img src="images/certificate_generator.jpeg" alt="Personal Website"></a>
-                         </div>
-                    </div> <!-- end of grid -->
-                    <!-- end of filter -->
-                    
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-		</div> <!-- end of container -->
-    </div> <!-- end of filter -->
-    <!-- end of projects -->
-
-    <!-- Biance Lightboxe -->
-    <!-- Lightbox -->
-    <div id="project-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-8">
-                <img class="img-fluid" src="images/Crypto-Binance.jpg" alt="Crypto Trading Bot Based on Binance API">
-            </div> <!-- end of col -->
-            <div class="col-lg-4">
-                <h3>Cryptocurrency Trading Bot for Binance & Kucoin</h3>
-                <hr class="line-heading">
-
-                <p>Python bot with <b>integrated APIs</b> of Binance, Kucoin, and Telegram that requests <b>live crypto price data</b> from exchanges, executes a variety of <b>trade orders</b> (Market/Limit/ OCO), and sends <b>notifications on user's Telegram account</b> after preliminary calculations of multiple TA-indicators and candle patterns.</p>
-                <p> The project is currently in <b>Backtesting Phase</b>, whereby different combinations of strategies are being tested against the PNL of HODLing.
-                </p>
-                <h6> ~ Python,  API Integration, JSON, websockets, requests, TA-Indicators and candle patterns</h6>
-                <a class="mfp-close as-button btn-solid-reg " href="#contact" style="color: white;">Contact Me</a> 
-                <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a> 
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-
-    <!-- Habinet Lightbox -->
-    <div id="project-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-8">
-                <img class="img-fluid" src="images/Habinet.jpg" alt="Habinet - Social Media of Productivity">
-            </div> <!-- end of col -->
-            <div class="col-lg-4">
-                <h3>Habinet: The Social Media Of Productivity</h3>
-                <hr class="line-heading">
-                <p>A <b>gamified</b> habit tracking desktop application with integrated social media features such as <b>groups, group chat, leaderboards, past trends/habits visualizing graphs and to-do list</b>.The application uses a relational <b>database</b> hosted on a web server to store user data.
-                <p>This project was created as a semester-long project for the <b>CS-102 course</b>. The project was done by a team of four members, including myself. </p>                
-                <h6>~ Java, JDBC, MySQL, Swing and Database Management</h6>
-                <a class="btn-solid-reg" href="#github-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a> 
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-
-    <!-- Resume Lightbox -->
-    <div id="project-3" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-8">
-                <img class="img-fluid" src="images/project-3.jpg" alt="Personal Website">
-            </div> <!-- end of col -->
-            <div class="col-lg-4">
-                <h3>Personal Website</h3>
-                <hr class="line-heading">
-                <p>An online <b>mobile-friendly</b> and responsive resume website, that lists my work experience, projects and awards in an interactive way. The website is styled and animated using <b>CSS, Bootstrap and Javascript</b> with a contact me form implemented using PHP. The website is hosted on <b>Github Pages</b> and updated using <b>Git</b>.) </p>
-                <p>This website was created as personal project to practice full-stack technologies and tools.</p>                
-                <h6>~ HTML, CSS, Bootstrap, JavaScript, PHP, Git and Github Pages</h6>
-                <a class="btn-solid-reg mfp-close as-button" href="#header" style="color: white;" >DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a> 
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-
-    <!-- Lightbox -->
-    <div id="project-4" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">x</button>
-            <div class="col-lg-8">
-                <img class="img-fluid" src="images/project-4.jpg" alt="Project-4 Image">
-            </div> <!-- end of col -->
-            <div class="col-lg-4">
-                <h3>Mood-based Music Player</h3>
-                <hr class="line-heading">                
-                <p>An android application with an <b>animated UI design</b> using XML and Java that plays .mp3 music files and groups music files using the <b>user's past preferences</b> to play later using the <b>user's current mood selections</b>.</p>
-                <p>This is another personal project started to practice the features of Android Studio and to explore the practical uses of Java.</p>
-                <h6>~ Java, XML, Android Studio</h6>
-                <a class="btn-solid-reg mfp-close as-button" href="#header" style="color: white;" >DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a> 
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-
-    <!-- Lightbox -->
-    <div id="project-5" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-8">
-                <img class="img-fluid" src="images/project-5.jpg" alt="Java Project">
-            </div> <!-- end of col -->
-            <div class="col-lg-4">
-                <h3>Simplified 32-bit Programmable Processor </h3>
-                <hr class="line-heading">                
-                <p>A five instruction <b>(Load, Store, Jump, Add, Subtract)</b> processor implemented for <b>Basys-3 FPGA board</b> using simplified datapath and controller. The processor had <b>predefined intruction set in ROM</b> and could also input and <b>run external instructions<b> on runtime.</p>
-                <p>This project was created as a final project for the <b>CS-223 course</b>. The project was an <b>individual</b> project completed in four weeks. </p>
-                <h6>~ SystemVerilog, Vivado and Assembly</h6>
-                <a class="btn-solid-reg mfp-close as-button" href="#header" style="color: white;" >DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a> 
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-
-        <!-- Lightbox -->
-        <div id="project-6" class="lightbox-basic zoom-anim-dialog mfp-hide">
-          <div class="row">
-              <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-              <div class="col-lg-8">
-                  <img class="img-fluid" src="images/project-6.jpg" alt="Java Project">
-              </div> <!-- end of col -->
-              <div class="col-lg-4">
-                  <h3>BilCargo </h3>
-                  <hr class="line-heading">                
-                  <p>A web-based logistics management system for a courier delivery company. Application provided <b>CRUD operations</b>, filtering, search and report generation functionality. The database was based on a <b>BCNF-normalized ER model</b> with custom data access privileges. Different user types had different UI screens and functionalities available. </p>
-
-                  <p>This application for created as a semester long group project for CS-353 "Database Systems" Course.</p>
-                  <h6>~ React.js, ANT Design, CSS, Spring Boot, MySQL, REST APIs & Postman</h6>
-                  <a class="btn-solid-reg mfp-close as-button" href="https://github.com/KentyMcDclr8/dbmsprojectfrontend" style="color: white;" >DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a> 
-              </div> <!-- end of col -->
-          </div> <!-- end of row -->
-      </div> <!-- end of lightbox-basic -->
-      <!-- end of lightbox -->
-
-      <!-- Lightbox -->
-      <div id="project-7" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-8">
-                <img class="img-fluid" src="images/certificate_generator.jpeg" alt="Java Project">
-            </div> <!-- end of col -->
-            <div class="col-lg-4">
-                <h3>Automated Certificate Generation System</h3>
-                <hr class="line-heading">                
-                <p>A time-saving solution that <b>automates</b> the process of generating certificates for multiple students or participants simultaneously. The user can easily <b>customize the certificate template</b> and generate all customized certificates instantly by providing a list of first names. </p>
-
-                <p>Specifically designed for ESN Communities around the world, this application <b>eliminates the need for manual entry</b>, resulting in significant time savings.</p>
-                <h6>~ Python, Pandas, Automation & Scripting</h6>
-                <a class="btn-solid-reg mfp-close as-button" href="https://github.com/Atherrrrr/Certificate_Generator_ESN_Bilkent" style="color: white;" >DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a> 
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-
-    <!-- Experience -->
-    <div id="experience" class="cards-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">EXPERIENCE</div>
-                    <h2>Past Professional Job / Internship Roles</h2>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-              
-                  <!-- Card -->
-                  <div class="card">
-                    <div class="card-image">
-                        <img class="img-fluid" src="images/layermark.jpg" alt="Layermark">
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Full Stack Developer (Layermark)</h3>
-                        <br>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"> <strong>Improved user experience</strong> by designing dynamic UI for an asset management system using <strong>ANT Design</strong> components in React.js </div>
-                            </li>
-                            <li class="media">
-                              <i class="fas fa-square"></i>
-                              <div class="media-body">Accelerated front-end development and maintenance <strong>time by 70%</strong> by rebuilding UI with custom UI components.</div>
-                          </li>
-                          <li class="media">
-                            <i class="fas fa-square"></i>
-                            <div class="media-body">Created optimized back-end services for multiple API collections with <strong>cache management</strong>  and custom business logic using Java Spring.</div>
-                        </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Introduced innovative business rules management solutions with Drools, enabling <strong>expansion opportunities</strong> in existing products. .</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Enhanced code readability and maintainability by implementing SOLID practices and creating <strong> custom reusable components</strong>.</div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="button-container">
-                        <a target= "_blank" class="btn-solid-reg page-scroll" href="https://www.fiverr.com/assistware">DETAILS</a>
-                    </div> <!-- end of button-container -->
+            </div>
+            <ul class="archive">
+              <li class="archive__row">
+                <span class="archive__id label">P-06</span>
+                <div class="archive__main">
+                  <h3 class="archive__title">Schwa</h3>
+                  <p>Accent and articulation practice app with a step-by-step roadmap of sound fixes.</p>
                 </div>
-                <!-- end of card -->
+                <div class="archive__meta">
+                  <span class="archive__stack">Flutter · FastAPI · Supabase · Azure Speech</span>
+                  <span class="archive__year">2026</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <img class="img-fluid" src="images/Fiverr.jpg" alt="AL-HUDA Educational Institute">
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title">Automated Trading Systems Developer (Assistware)</h3>
-                            <br>
-                            <ul class="list-unstyled li-space-lg">
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Successfully designed and deployed <strong>75+ highly effective crypto trading bots </strong>, receiving exceptional customer reviews with a perfect <strong>5/5 rating.</strong>  </div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Back-tested trading strategies involving TA-indicators on past candle data and provided <strong>PNL reports and optimization plans.</strong>.</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Deployed, maintained, and updated trading/scraping bots for <strong>commercial distribution</strong> for small-scale start-ups.</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body"><strong>Integrated Python APIs</strong> of prominent platforms, including Binance.com, Binance.us, Kucoin and Telegram in scripts and bots.</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Utilized websockets, requests, threading and JSON for <strong>web-scraping data</strong> from Discord and Coinmarketcap.</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Utilized Python data structures to enable seamless data synchronization, streamline portfolio management, deliver intelligent notifications, and perform real-time complex technical analysis, resulting in improved trading performance and higher returns.</div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="button-container">
-                            <a target= "_blank" class="btn-solid-reg page-scroll" href="https://www.fiverr.com/assistware">DETAILS</a>
-                        </div> <!-- end of button-container -->
-                    </div>
-                    <!-- end of card -->
-                    
+<section class="wrap section" id="experience" aria-labelledby="experience-h">
+  <div class="section__grid">
+    <div class="section__head">
+      <span class="badge">03</span>
+      <h2 class="section__title" id="experience-h">Experience</h2>
+    </div>
+    <div class="section__body">
+      <ol class="timeline">
+        <li class="timeline__row">
+          <div class="timeline__when">
+            <span class="timeline__dates">2023.07 <span aria-hidden="true">→</span><span class="sr">to</span> now</span>
+            <span class="timeline__note">Saarbrücken, Germany · remote contractor until 2025.03</span>
+          </div>
+          <div class="timeline__what">
+            <h3 class="role">TestFabrik AG <span class="role__title">· Applied AI Engineer</span></h3>
+            <ul class="bullets">
+              <li>Sole architect of the central LLM inference layer that every AI feature on the webMate QA platform runs through (async RabbitMQ transport, multi-provider, rate limiting, cost tracking).</li>
+              <li>Built an LLM and vision based accessibility analysis service from scratch; <strong class="hl">45+ W3C test rules authored</strong>.</li>
+              <li>Made self-hosted LLM inference <strong class="hl">1.64× faster</strong> (single-stream) through quantization, a prefix-cache fix and async scheduling, validated against the full-precision model.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline__row">
+          <div class="timeline__when">
+            <span class="timeline__dates">2022.06 <span aria-hidden="true">→</span><span class="sr">to</span> 2023.07</span>
+            <span class="timeline__note">Washington, D.C., then remote</span>
+          </div>
+          <div class="timeline__what">
+            <h3 class="role">LAYERMARK <span class="role__title">· Full-Stack Developer</span></h3>
+            <ul class="bullets">
+              <li>Rebuilt Java Spring backend services with cache management, cutting response times by 60%.</li>
+              <li>Rebuilt the UI as reusable React components, cutting front-end development time by 70%.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline__row">
+          <div class="timeline__when">
+            <span class="timeline__dates">2021.09 <span aria-hidden="true">→</span><span class="sr">to</span> 2024.04</span>
+            <span class="timeline__note">Fiverr and Upwork</span>
+          </div>
+          <div class="timeline__what">
+            <h3 class="role">Freelance <span class="role__title">· Automated Trading Systems Developer</span></h3>
+            <ul class="bullets">
+              <li>Designed and deployed <strong class="hl">75+ crypto trading bots</strong> for international clients at a 5/5 rating.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
 
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <img class="img-fluid" src="images/alhuda.jpg" alt="AL-HUDA Educational Institute">
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title">Graphic Designer and Social Media Manager</h3>
-                            <br>
-                            <ul class="list-unstyled li-space-lg">
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Illustrated <strong>72 workbooks</strong> & school magazines for primary classes on CorelDraw.</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Designed <strong>flyers, posters and video-advertisement</strong> for school events and marketing campaign.</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Commenced and executed social media marketing campaign, obtaining <strong>2.1k+ followers</strong> on Facebook and <strong>10k+ Subscribers</strong> on YouTube.</div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="button-container">
-                            <a target= "_blank" class="btn-solid-reg page-scroll" href="https://www.youtube.com/channel/UCHyaUFFFkNV-lUMtkwHMrPw">DETAILS</a>
-                        </div> <!-- end of button-container -->
-                    </div>
-                    <!-- end of card -->
+<section class="wrap section" id="education" aria-labelledby="education-h">
+  <div class="section__grid">
+    <div class="section__head">
+      <span class="badge">04</span>
+      <h2 class="section__title" id="education-h">Education and honors</h2>
+    </div>
+    <div class="section__body">
+      <div class="edu-block">
+        <dl class="edu">
+          <div class="edu__row">
+            <dt class="edu__when">2020 <span aria-hidden="true">→</span><span class="sr">to</span> 2024</dt>
+            <dd class="edu__what"><span class="edu__title">B.Sc. Computer Engineering, Bilkent University</span><span class="edu__detail">CGPA 3.69 · Magna Cum Laude · Full merit scholarship</span></dd>
+          </div>
+          <div class="edu__row">
+            <dt class="edu__when">2023</dt>
+            <dd class="edu__what"><span class="edu__title">Exchange semester, Saarland University</span></dd>
+          </div>
+        </dl>
+        <div class="honors">
+          <h3 class="label">Honors</h3>
+          <ul class="honors__list">
+            <li><span class="honors__when">2024 · 1st place</span><span>Bilkentpreneurs Challenge</span></li>
+            <li><span class="honors__when">2024 · Award</span><span>Best Data Science Project</span></li>
+            <li><span class="honors__when">2024 · Runner-up</span><span>AWS University Engagement</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <img class="img-fluid" src="images/SKMCH.jpg" alt="Shaukat Khanum Memorial 
-                            Cancer Hospital & Research Center">
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title">Marketing and Management Intern</h3>
-                            <br>
-                            <ul class="list-unstyled li-space-lg">
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Convinced management of <strong> 200+ shops</strong> all over Lahore to host donation boxes in their stores.</div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="button-container">
-                            <a target= "_blank" class="btn-solid-reg page-scroll" href="https://shaukatkhanum.org.pk/">DETAILS</a>
-                        </div> <!-- end of button-container -->
-                    </div>
-                    <!-- end of card -->
-                    
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <img class="img-fluid" src="images/care.jpg" alt="Care Foundation">
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title">Curriculum Development Intern</h3>
-                            <br>
-                            <ul class="list-unstyled li-space-lg">
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Revised annual SMART curriculum for underprivileged middle-school students.</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Received <strong>Best Intern Award</strong> for creativity and work ethic from a cohort of <strong>25 Interns</strong>.</div>
-                                </li> 
-                            </ul>
-                        </div>
-                        <div class="button-container">
-                            <a target= "_blank" class="btn-solid-reg page-scroll" href="https://i-care-foundation.org/">DETAILS</a>
-                        </div> <!-- end of button-container -->
-                    </div>
-                    <!-- end of card -->
+</div>
 
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <img class="img-fluid" src="images/Beaconhouse-Black.jpg" alt="Beaconhouse School System">
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title">Peer Tutor</h3>
-                            <br>
-                            <ul class="list-unstyled li-space-lg">
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Organized study jams for <strong>Physics (9702) and Computer Science (9608)</strong> AS-Level students.
-                                    </div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Monitored and assigned tutors to peers, subjects-wise.
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="button-container">
-                            <a target= "_blank" class="btn-solid-reg page-scroll" href="https://www.beaconhouse.net/">DETAILS</a>
-                        </div> <!-- end of button-container -->
-                    </div>
-                    <!-- end of card -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of cards-2 -->
-    <!-- end of services -->
+<section class="wrap agent" id="agent-view" aria-labelledby="agent-h" hidden>
+  <div class="agent__inner">
+    <h1 class="sr" id="agent-h">Maher Athar Ilyas, agent view</h1>
+    <div class="agent__note">
+      <p>Agent view · the same content as plain markdown, the way an LLM or sourcing agent reads it. Also served at <a href="index.md">/index.md</a> and <a href="llms.txt">/llms.txt</a>.</p>
+      <button class="btn btn--mono" type="button" data-view-back>Back to designed view</button>
+    </div>
+<pre class="agent__md" id="agent-md"># Maher Athar Ilyas
 
+Applied AI Engineer building LLM inference platforms and AI automation.
+Location: Germany
 
+&gt; If something can be automated, I'll find a way.
 
+## Key figures
 
-    
+| Value | Detail |
+|---|---|
+| 5+ yrs | building production software, 3+ in applied AI |
+| Sole architect | of the LLM platform behind every AI feature in a commercial QA product |
+| #1 | most W3C accessibility test rules covered of any automated tool, automated with LLM and vision models |
 
-    <!-- Honors -->
-    <div id="honors" class="slider">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title" style="text-align: center;">HONORS</div>
-                    <br>
-                    <h2>List of Academic and Extra-Curricular Honors/ Awards</h2>
-                    <br>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
+## Links
 
-                    <!-- Card Slider -->
-                    <div class="slider-container">
-                        <div class="swiper-container card-slider">
-                            <div class="swiper-wrapper">
-                                
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src="images/Bilkent.jpg" alt="High Honor Student Certificate">
-                                        <div class="card-body">
-                                            <div class="testimonial-author">High Honor Roll</div>
-                                            <br>
-                                            <div class="testimonial-text">Obtained High Honor certificate upon securing <b>3.88 CGPA</b> as a Freshman.</div>
-                                            <br>
-                                            <div class="testimonial-author"> - Bilkent University</div>
-                                        </div>
-                                    </div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src="images/distinction.jpg" alt="Cambirdge Outstanding Learners Award">
-                                        <div class="card-body">
-                                            <div class="testimonial-author">Cambridge Outstanding Learners Award</div>
-                                            <br>
-                                            <div class="testimonial-text">Best Performance in O-Levels <b>Computer Science</b> examination May-June 2018 across the region.</div>
-                                            <br>
-                                            <div class="testimonial-author"> - Cambridge Assessment International Education</div>
-                                        </div>
-                                    </div>        
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
+- CV: https://atherrrrr.github.io/cv/Maher-Athar-Ilyas-CV.pdf
+- LinkedIn: https://www.linkedin.com/in/athar-ilyas
+- GitHub: https://github.com/atherrrrr
+- Email: maheratharilyas@gmail.com
 
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src="images/INSEF.jpg" alt="INSEF">
-                                        <div class="card-body">
-                                            <div class="testimonial-author">National Best of Category Winner</div>
-                                            <br>
-                                            <div class="testimonial-text">Received Best Project award for Chemical Renewable Energy Category. Project was titled <b>"Earth Battery"</b> (Generating electricity from mud)</div>
-                                            <br>
-                                            <div class="testimonial-author">- Intel National Science and Engineering Fair</div>
-                                        </div>
-                                    </div>        
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src="images/Beaconhouse.jpg" alt="Beaconhouse School System ALJT">
-                                        <div class="card-body">
-                                            <div class="testimonial-author">Highest Achiever Award</div>
-                                            <br>
-                                            <div class="testimonial-text">Received Gold Medal for securing perfect grades <b>(4A*)</b> in A-Levels</div>
-                                            <br>
-                                            <div class="testimonial-author"> - Beaconhouse School System</div>
-                                        </div>
-                                    </div>        
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-    
+## About
 
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src="images/tbt.jpg" alt="Table Tennis">
-                                        <div class="card-body">
-                                            <div class="testimonial-author">Regional Table Tennis Champion 2019</div>
-                                            <br>
-                                            <div class="testimonial-text">Won <b>Gold Medal</b> at Inter-Regional Table Tennis Championship 2019</div>
-                                            <br>
-                                            <div class="testimonial-author">- BSS Central Region</div>
-                                        </div>
-                                    </div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
+I've automated everything from crypto trading bots in college, to development workflows and manual audit processes with AI at work, to my own daily routines. I work across the full pipeline, from system design and AI integration to the user experience of what gets shipped, and I iterate with users and POCs until a solution actually delivers. I care more about whether something solves the problem cleanly than what stack it's built on.
 
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src="images/GSEA.jpg" alt="GSEA">
-                                        <div class="card-body">
-                                            <div class="testimonial-author">National English Contest Winner</div>
-                                            <br>
-                                            <div class="testimonial-text">Obtained <b>1st Position in Pakistan </b> for GSEA English Test </div>
-                                            <br>
-                                            <div class="testimonial-author">- Global System of Educational Assessments</div>
-                                        </div>
-                                    </div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-                            
-                            </div> <!-- end of swiper-wrapper -->
-        
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <!-- end of add arrows -->
-        
-                        </div> <!-- end of swiper-container -->
-                    </div> <!-- end of sliedr-container -->
-                    <!-- end of card slider -->
+Working on an automation or AI problem? Let's talk.
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of slider -->
-    <!-- end of Honors -->
+## Selected work
 
+### Life OS (2025 to now)
 
-    <!-- Contact -->
-    <div id="contact" class="form-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <div class="section-title">Get In Touch</div>
-                        <h2>Contact Me Using This Form</h2>
-                        <p class="">I am looking forward to availing all types of new learning opportunities and connecting with new like-minded people.</p>
-                        <p class="">Use my social media handles or this form to contact me regarding <strong>Job or Freelance opportunities</strong>.</p>
-                        <ul class=" list-unstyled li-space-lg">
-                            <li class="address"><i class=" white fas fa-map-marker-alt"></i> Bilkent University - Main Campus, Ankara, Turkey.</li>
-                            <li><i class="fas fa-phone"></i><a href="tel:003024630820">+92 321 4531655</a></li>
-                            <li><i class="fas fa-envelope"></i><a href="mailto:office@Maher Athar Ilyas.com">atherilyas100@gmail.com</a></li>
-                        </ul>
-                        <h3>Follow Me On Social Media</h3>
+Personal analytics MCP server and reporting agent. Normalizes calendar, habits, finance and wearable health data into scored daily records.
 
-                        <span class="fa-stack">
-                            <a target="_blank" href="https://www.facebook.com/ather.ilyas.5/">
-                                <span class="hexagon"></span>
-                                <i class="fab fa-facebook-f fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a target="_blank" href="https://twitter.com/_atherrrrr">
-                                <span class="hexagon"></span>
-                                <i class="fab fa-twitter fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a target="_blank" href="https://www.instagram.com/_atherrr/?hl=en">
-                                <span class="hexagon"></span>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a target="_blank" href="https://github.com/Atherrrrr">
-                                <span class="hexagon"></span>
-                                <i class="fab fab fa-github fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a target="_blank" href="https://www.linkedin.com/in/athar-ilyas/">
-                                <span class="hexagon"></span>
-                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
-                            </a>
-                        </span>
+- Result: Weekly and monthly reviews written automatically by agent skills.
+- Stack: MCP · Cloudflare Workers
+- Four sources in one schema: calendar time logs, habit tracking, finance exports and wearable health data.
+- Each day becomes one scored record, so weeks and months are directly comparable.
+- Agent skills query the MCP tools and write the weekly and monthly reviews without manual work.
 
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-                    
-                    <!-- Contact Form -->
-                    <form id="my-form" data-toggle="validator" data-focus="false"
-                        action="https://formspree.io/f/moqylezn"
-                        method="POST">
-                        <br>
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" name ="name" required>
-                            <label class="label-control" for="cname">Name</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" name="_replyto" required>
-                            <label class="label-control" for="cemail">Email</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control-textarea" name ="message" required></textarea>
-                            <label class="label-control" for="cmessage">Your message</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <button id="my-form-button" type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
-                        </div>
-                        <div class="form-message">
-                            <div id="my-form-status" class="h3 text-center hidden"></div>
-                        </div>
-                    </form>
-                    <!-- end of contact form -->
+### WePrep (2024)
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-2 -->
-    <!-- end of contact -->
+AI interview coach. LLM-generated questions, asked by a lip-synced synthetic interviewer, with every answer scored.
 
+- Result: 1st place, Bilkentpreneurs Challenge 2024 · Best Data Science Project.
+- Stack: FastAPI · Next.js · MongoDB
+- An LLM generates the interview questions.
+- A lip-synced synthetic interviewer asks them on screen.
+- CNN-based models score emotion and body language while the candidate answers.
+- An LLM evaluates the content of each answer.
 
-    <!-- Copyright -->
-    <div class="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Copyright © 2021 <a href="#header">Maher Athar Ilyas</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of copyright --> 
-    <!-- end of copyright -->
-    
-    	
-    <!-- Scripts -->
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
-    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
-    <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
-    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+### School management system (2026 to now)
 
-    <!-- Script from Fromspree since PHP doesnt work on GitHub Pages -->
-    <script>
-        var form = document.getElementById("my-form");
-        
-        async function handleSubmit(event) {
-          event.preventDefault();
-          var status = document.getElementById("my-form-status");
-          var data = new FormData(event.target);
-          fetch(event.target.action, {
-            method: form.method,
-            body: data,
-            headers: {
-                'Accept': 'application/json'
-            }
-          }).then(response => {
-            status.innerHTML = "Thanks for your submission!";
-            form.reset()
-          }).catch(error => {
-            status.innerHTML = "Oops! There was a problem submitting your form"
-          });
-        }
-        form.addEventListener("submit", handleSubmit)
-    </script>
+CampusPilot, the system a four-branch school runs on: admissions, fees, attendance, exams, payroll and a parent app.
 
+- Result: In production since June 2026 with 1,235 active students across 4 branches.
+- Stack: Spring Boot · PostgreSQL · Next.js · Docker
+- Migrated 17 years of records from a legacy Oracle database: 4,688 students, 120,000+ fee challans and 189,000+ result entries.
+- Monthly fee challans generated per branch and class as print-ready PDFs; 3,730 so far.
+- Since go-live, staff have recorded 44,000+ attendance marks, 11,900+ results and 5,500+ payments.
+- Six roles and 116 permissions keep each staff member to their own branch and tasks.
 
+### SkillSprint (2024)
+
+Serverless micro-learning platform. LLM-generated skill roadmaps, then daily quizzes and flashcards to work through them.
+
+- Result: Runner-up in the AWS University Engagement program, across 3 universities.
+- Stack: AWS Lambda · DynamoDB · SageMaker · Next.js
+- An LLM generates a roadmap for the skill the learner picks.
+- Daily quizzes and flashcards keep sessions short and frequent.
+- Fully serverless on AWS Lambda and DynamoDB, with SageMaker and a Next.js front end.
+
+### More projects
+
+- **Blitz** (2026): Fast multiple-choice drill app for learning German. Tap, see the answer, next. Stack: TypeScript · Vite · PWA · Cloudflare Workers.
+- **Schwa** (2026): Accent and articulation practice app with a step-by-step roadmap of sound fixes. Stack: Flutter · FastAPI · Supabase · Azure Speech.
+
+## Experience
+
+### Applied AI Engineer, TestFabrik AG
+`2023.07 to now` · Saarbrücken, Germany · remote contractor until 2025.03
+
+- Sole architect of the central LLM inference layer that every AI feature on the webMate QA platform runs through (async RabbitMQ transport, multi-provider, rate limiting, cost tracking).
+- Built an LLM and vision based accessibility analysis service from scratch; 45+ W3C test rules authored.
+- Made self-hosted LLM inference 1.64x faster (single-stream) through quantization, a prefix-cache fix and async scheduling, validated against the full-precision model.
+
+### Full-Stack Developer, LAYERMARK
+`2022.06 to 2023.07` · Washington, D.C., then remote
+
+- Rebuilt Java Spring backend services with cache management, cutting response times by 60%.
+- Rebuilt the UI as reusable React components, cutting front-end development time by 70%.
+
+### Automated Trading Systems Developer, Freelance
+`2021.09 to 2024.04` · Fiverr and Upwork
+
+- Designed and deployed 75+ crypto trading bots for international clients at a 5/5 rating.
+
+## Education and honors
+
+- B.Sc. Computer Engineering, Bilkent University, 2020 to 2024. CGPA 3.69, Magna Cum Laude, full merit scholarship
+- Exchange semester, Saarland University, 2023
+- Honors: Bilkentpreneurs Challenge 2024 1st place; Best Data Science Project 2024; AWS University Engagement runner-up
+
+## Languages
+
+English (C2), Urdu (C2), Turkish (A2), German (A2)
+
+## Outside work
+
+Table tennis (2019 regional champion) and kickboxing.
+</pre>
+  </div>
+</section>
+</main>
+
+<footer class="wrap site-footer" data-human>
+  <div class="footer__grid">
+    <div class="footer__col footer__col--langs">
+      <h2 class="label">Languages</h2>
+      <dl class="langs">
+        <div><dt class="label">English</dt><dd>C2</dd></div>
+        <div><dt class="label">Urdu</dt><dd>C2</dd></div>
+        <div><dt class="label">Turkish</dt><dd>A2</dd></div>
+        <div><dt class="label">German</dt><dd>A2</dd></div>
+      </dl>
+    </div>
+    <div class="footer__col footer__col--outside">
+      <h2 class="label">Outside work</h2>
+      <p>Table tennis (2019 regional champion) and kickboxing.</p>
+    </div>
+    <div class="footer__col footer__col--links">
+      <h2 class="label">Links</h2>
+      <ul class="footer__links">
+        <li><a href="cv/Maher-Athar-Ilyas-CV.pdf" download>CV (PDF)</a></li>
+        <li><a href="https://www.linkedin.com/in/athar-ilyas" rel="me">LinkedIn</a></li>
+        <li><a href="https://github.com/atherrrrr" rel="me">GitHub</a></li>
+        <li class="footer__email"><span class="email">maheratharilyas@gmail.com</span><button class="link-button js-only" type="button" data-copy-email><span data-copy-label>Copy email</span></button></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom label">
+    <span>© 2026 Maher Athar Ilyas</span>
+    <span>Static HTML · no tracking</span>
+  </div>
+</footer>
+
+<p class="sr" role="status" aria-live="polite" data-status></p>
 </body>
 </html>
