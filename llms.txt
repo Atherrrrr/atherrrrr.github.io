@@ -11,7 +11,7 @@ Location: Germany
 |---|---|
 | 5+ yrs | building production software, 3+ in applied AI |
 | Sole architect | of the LLM platform behind every AI feature in a commercial QA product |
-| #1 | most consistent W3C accessibility test rules of any fully automated tool, automated with LLM and vision models |
+| #1 | highest automated coverage of any tool in the W3C ACT implementation report, built with LLM and vision models |
 
 ## Links
 
@@ -118,7 +118,7 @@ Accent and articulation practice app with a step-by-step roadmap of sound fixes.
 
 #### Accessibility
 
-- Built an LLM and vision based accessibility analysis service from scratch, giving webMate the most consistent rules of any fully automated tool in the W3C ACT implementations list (https://www.w3.org/WAI/standards-guidelines/act/implementations/); I automated 53 of its 87 WCAG 2.2 rules (https://www.w3.org/WAI/standards-guidelines/act/implementations/webmate-accessibility-workbench/) myself (45 fully, 8 partially).
+- Built an LLM and vision based accessibility analysis service from scratch, giving webMate the highest automated coverage of any tool in the W3C ACT implementation report (https://www.w3.org/WAI/standards-guidelines/act/implementations/webmate-accessibility-workbench/). Separately, I automated 53 of the 87 WCAG 2.2 rules myself (45 fully, 8 partially).
 - Checks cover headings, labels, form instructions, links in context, language, readability and DOM relationships, run in parallel, in several languages and only against the requirements that apply.
 - Localized axe-core results and AI-generated findings into German and French: locale-aware prompts and a Maven-based resource build replacing legacy locale handling.
 - Researched native mobile accessibility testing, then shipped the Mobile Automation Run and Workbench plugin for Android and iOS on an OpenSTF device farm: native screenshots, scrolling and accessibility rectangles across viewports.
