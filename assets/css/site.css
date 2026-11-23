@@ -305,6 +305,8 @@ html:not(.js) .archive-panel { margin-top: 0; }
 .role__title { font-family: var(--sans); font-size: 16px; color: var(--muted); }
 .bullets { gap: 10px; font-size: 16px; line-height: 1.55; max-width: 70ch; }
 .bullets li::before { content: "·"; position: absolute; left: 0; color: var(--muted); }
+.bullets__group { font-weight: 400; color: var(--accent); margin: 16px 0 -6px; }
+.bullets__group:first-of-type { margin-top: 4px; }
 .hl {
   font-weight: 600; padding-bottom: 1px;
   background: linear-gradient(var(--hi), var(--hi)) left bottom / 100% 2px no-repeat;

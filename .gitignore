@@ -1,3 +1,7 @@
 # Design-tool source and raw recordings; the site uses the compressed copies in assets/media
 design/
 videos/
+
+# Private career notes (phone, email, interview prep); never commit
+Career Master Context*
+*.private.md
