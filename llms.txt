@@ -112,7 +112,7 @@ Serverless micro-learning platform. LLM-generated skill roadmaps, then daily qui
 
 - Illustrated 72 workbooks and school magazines for primary classes in CorelDraw.
 - Designed flyers, posters and video ads for school events and campaigns.
-- Planned and ran a social media campaign that grew the school's Facebook page to 2.1k+ followers.
+- Planned and ran the school's social media, growing its YouTube channel to 17k+ subscribers and its Facebook page to 2.1k+ followers.
 
 ### Intern and peer tutor, Earlier roles
 `School years` · Internships and tutoring
