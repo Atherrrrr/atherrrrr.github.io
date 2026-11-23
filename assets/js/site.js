@@ -131,43 +131,40 @@
     });
   });
 
-  // Media: muted loops play only in view, never under prefers-reduced-motion, and always have a visible pause control.
+  // Media: muted loops play only in view and never under prefers-reduced-motion.
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   var players = [];
 
   function pauseAllVideos() {
-    players.forEach(function (v) { v.pause(); });
+    players.forEach(function (stop) { stop(); });
   }
 
   document.querySelectorAll('.media__video').forEach(function (video) {
-    var control = video.parentElement.querySelector('[data-video-toggle]');
+    // The browser's own controls stay on (play, pause, seek, fullscreen).
+    // A pause the visitor makes is remembered, so scrolling back does not restart the video.
     var userPaused = false;
+    var autoPausing = false;
     var inView = false;
 
-    video.removeAttribute('controls');
-
-    function label() {
-      if (control) control.textContent = video.paused ? 'Play demo' : 'Pause demo';
-    }
     function play() {
       var p = video.play();
       if (p && p.catch) p.catch(function () {});
     }
+    function pause() {
+      if (video.paused) return;
+      autoPausing = true;
+      video.pause();
+    }
     function update() {
       if (inView && !userPaused && !reduceMotion.matches && !video.closest('[hidden]')) play();
-      else video.pause();
+      else pause();
     }
 
-    video.addEventListener('play', label);
-    video.addEventListener('pause', label);
-
-    if (control) {
-      control.addEventListener('click', function () {
-        if (video.paused) { userPaused = false; play(); }
-        else { userPaused = true; video.pause(); }
-        label();
-      });
-    }
+    video.addEventListener('pause', function () {
+      if (!autoPausing) userPaused = true;
+      autoPausing = false;
+    });
+    video.addEventListener('play', function () { userPaused = false; });
 
     if ('IntersectionObserver' in window) {
       new IntersectionObserver(function (entries) {
@@ -179,7 +176,6 @@
     if (reduceMotion.addEventListener) reduceMotion.addEventListener('change', update);
     else if (reduceMotion.addListener) reduceMotion.addListener(update);
 
-    players.push(video);
-    label();
+    players.push(pause);
   });
 })();

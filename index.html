@@ -62,8 +62,9 @@
   <div class="wrap site-header__inner">
     <a class="brand" href="#top">Maher Athar Ilyas</a>
     <nav class="nav" aria-label="Sections" data-human>
-      <a class="label-link" href="#work">Work</a>
+      <a class="label-link" href="#work">Projects</a>
       <a class="label-link" href="#experience">Experience</a>
+      <a class="label-link" href="#skills">Skills</a>
       <a class="label-link" href="#education">Education</a>
     </nav>
     <div class="toggles js-only">
@@ -157,7 +158,7 @@
   <div class="section__grid">
     <div class="section__head">
       <span class="badge">02</span>
-      <h2 class="section__title" id="work-h">Selected work</h2>
+      <h2 class="section__title" id="work-h">Projects</h2>
     </div>
     <div class="section__body">
       <div class="work">
@@ -169,7 +170,6 @@
               <video class="media__video" muted loop playsinline controls preload="none" width="1280" height="720" poster="assets/media/lifeos-demo-poster.webp" aria-label="Life OS demo: calendar, habit tracker, smartwatch, bank export and Notion feed one MCP server on Cloudflare Workers, then Claude uses its tools to answer questions and write a weekly review of time, habits, health and money.">
                 <source src="assets/media/lifeos-demo.mp4" type="video/mp4">
               </video>
-              <button class="media__control js-only" type="button" data-video-toggle>Play demo</button>
             </div>
             <div class="card__title-row">
               <h3 class="card__title"><button class="card-toggle" type="button" aria-expanded="true" aria-controls="more-lifeos">Life OS</button></h3>
@@ -195,7 +195,6 @@
               <video class="media__video" muted loop playsinline controls preload="none" width="1280" height="720" poster="assets/media/weprep-demo-poster.webp" aria-label="WePrep demo: an AI interviewer asks questions on camera, three models score video, audio and words, and the app shows six scores, per-second charts, written feedback and a practice roadmap, followed by screens from the working app.">
                 <source src="assets/media/weprep-demo.mp4" type="video/mp4">
               </video>
-              <button class="media__control js-only" type="button" data-video-toggle>Play demo</button>
             </div>
             <div class="card__title-row">
               <h3 class="card__title"><button class="card-toggle" type="button" aria-expanded="true" aria-controls="more-weprep">WePrep</button></h3>
@@ -222,7 +221,6 @@
               <video class="media__video" muted loop playsinline controls preload="none" width="1280" height="720" poster="assets/media/campuspilot-demo-poster.webp" aria-label="School management system demo: 17 years of records move from a legacy Oracle database into one system for admissions, fees, attendance, exams, payroll and parents, with challan runs, daily usage numbers and screens from the live app.">
                 <source src="assets/media/campuspilot-demo.mp4" type="video/mp4">
               </video>
-              <button class="media__control js-only" type="button" data-video-toggle>Play demo</button>
             </div>
             <div class="card__title-row">
               <h3 class="card__title"><button class="card-toggle" type="button" aria-expanded="true" aria-controls="more-school">School management system</button></h3>
@@ -249,7 +247,6 @@
               <video class="media__video" muted loop playsinline controls preload="none" width="1280" height="720" poster="assets/media/skillsprint-demo-poster.webp" aria-label="SkillSprint demo: a typed goal becomes an LLM-generated roadmap of phases, lessons and quizzes, with curated resources, progress scores and a serverless AWS architecture, followed by screens from the working app.">
                 <source src="assets/media/skillsprint-demo.mp4" type="video/mp4">
               </video>
-              <button class="media__control js-only" type="button" data-video-toggle>Play demo</button>
             </div>
             <div class="card__title-row">
               <h3 class="card__title"><button class="card-toggle" type="button" aria-expanded="true" aria-controls="more-skillsprint">SkillSprint</button></h3>
@@ -284,7 +281,6 @@
               <video class="media__video" muted loop playsinline controls preload="none" width="1280" height="720" poster="assets/media/blitz-demo-poster.webp" aria-label="Blitz demo: one-tap German drills on a phone with combo and XP feedback, the driving test, exam and notes decks, five spaced repetition boxes, a tap-to-translate glossary, and new words added as one line through Claude Code.">
                 <source src="assets/media/blitz-demo.mp4" type="video/mp4">
               </video>
-              <button class="media__control js-only" type="button" data-video-toggle>Play demo</button>
             </div>
             <div class="card__title-row">
               <h3 class="card__title"><button class="card-toggle" type="button" aria-expanded="true" aria-controls="more-blitz">Blitz</button></h3>
@@ -341,9 +337,16 @@
           <div class="timeline__what">
             <h3 class="role">TestFabrik AG <span class="role__title">· Applied AI Engineer</span></h3>
             <ul class="bullets">
-              <li>Sole architect of the central LLM inference layer that every AI feature on the webMate QA platform runs through (async RabbitMQ transport, multi-provider, rate limiting, cost tracking).</li>
-              <li>Built an LLM and vision based accessibility analysis service from scratch; <strong class="hl">45+ W3C test rules authored</strong>.</li>
-              <li>Made self-hosted LLM inference <strong class="hl">1.64× faster</strong> (single-stream) through quantization, a prefix-cache fix and async scheduling, validated against the full-precision model.</li>
+              <li>Sole architect of the central LLM inference layer that every AI feature on the webMate QA platform runs through: tool calling, persisted conversations with compaction, async RabbitMQ transport, tenant rate limiting, cost tracking and EU-hosted Azure OpenAI with per-customer provider selection.</li>
+              <li>Built an LLM and vision based accessibility analysis service from scratch, reaching the <strong class="hl">highest automated coverage</strong> of any tool in the <a href="https://www.w3.org/WAI/standards-guidelines/act/implementations/webmate-accessibility-workbench/">W3C ACT implementation report</a> (53 of 87 WCAG 2.2 rules); <strong class="hl">45+ W3C test rules authored</strong>.</li>
+              <li>Made self-hosted LLM inference <strong class="hl">1.64× faster</strong> (single-stream) and raised KV-cache capacity 1.7× on vLLM through quantization, a prefix-cache fix and async scheduling, with 0 of 1,173 high-confidence predictions changed.</li>
+              <li>Built a benchmarking harness that scores candidate LLMs on accuracy, latency and cost against ground-truth accessibility cases on <strong class="hl">100+ websites</strong>, and used it to evaluate the move from OpenAI to self-hosted models.</li>
+              <li>Cut model cost roughly <strong class="hl">3×</strong> across a model migration through input preprocessing, request chunking and inference tuning, re-validated against ACT test cases.</li>
+              <li>Built a chatbot testing framework end to end in Scala, modelled on DeepEval and promptfoo: LLM-as-a-judge scoring on custom rubrics, red teaming, test datasets and regression testing.</li>
+              <li>Extended AI-generated findings to German and French, and rolled out the AI microservices on Kubernetes: deployment configuration, pod management, monitoring and debugging.</li>
+              <li>Lead AI feature development through planning, task delegation and code review, owning decisions on model selection, inference providers and GPU infrastructure; directed proofs of concept with local LLMs, including fine-tuning and custom datasets.</li>
+              <li>Lead TestFabrik's side of the <a href="https://lowbarrier.de/">LowBarrier</a> research consortium with DFKI, Fraunhofer IESE and WSC, shaping roadmap, requirements and architecture for WCAG 3.0 conformance.</li>
+              <li>Ran a client proof of concept for webMate, from requirements meetings to a live demo on the client's own product, and worked with product management on beta releases, use cases and UX.</li>
             </ul>
           </div>
         </li>
@@ -355,8 +358,10 @@
           <div class="timeline__what">
             <h3 class="role">LAYERMARK <span class="role__title">· Full-Stack Developer</span></h3>
             <ul class="bullets">
-              <li>Rebuilt Java Spring backend services with cache management, cutting response times by 60%.</li>
-              <li>Rebuilt the UI as reusable React components, cutting front-end development time by 70%.</li>
+              <li>Rebuilt Java Spring backend services with cache management, cutting response times by <strong class="hl">60%</strong>.</li>
+              <li>Rebuilt the UI as reusable React components on Ant Design and DevExtreme, cutting front-end development time by <strong class="hl">70%</strong>.</li>
+              <li>Introduced a Drools rules engine, so product offerings could be configured without code changes.</li>
+              <li>Built REST API collections in Spring with the matching front-end pages on PostgreSQL, following SOLID practices.</li>
             </ul>
           </div>
         </li>
@@ -369,6 +374,37 @@
             <h3 class="role">Freelance <span class="role__title">· Automated Trading Systems Developer</span></h3>
             <ul class="bullets">
               <li>Designed and deployed <strong class="hl">75+ crypto trading bots</strong> for international clients at a 5/5 rating.</li>
+              <li>Integrated Binance, KuCoin, Telegram, Discord and CoinMarketCap through their APIs, websockets and web scraping.</li>
+              <li>Built portfolio synchronisation, smart notifications and real-time technical analysis on live market data.</li>
+              <li>Back-tested strategies on historical candle data and delivered PnL reports with optimisation plans.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline__row">
+          <div class="timeline__when">
+            <span class="timeline__dates">2018.01 <span aria-hidden="true">→</span><span class="sr">to</span> 2020.08</span>
+            <span class="timeline__note">Alongside school</span>
+          </div>
+          <div class="timeline__what">
+            <h3 class="role">Al-Huda Educational Institute <span class="role__title">· Graphic Designer and Social Media Manager</span></h3>
+            <ul class="bullets">
+              <li>Illustrated <strong class="hl">72 workbooks</strong> and school magazines for primary classes in CorelDraw.</li>
+              <li>Designed flyers, posters and video ads for school events and campaigns.</li>
+              <li>Planned and ran a social media campaign that grew the school's Facebook page to 2.1k+ followers.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline__row">
+          <div class="timeline__when">
+            <span class="timeline__dates">School years</span>
+            <span class="timeline__note">Internships and tutoring</span>
+          </div>
+          <div class="timeline__what">
+            <h3 class="role">Earlier roles <span class="role__title">· Intern and peer tutor</span></h3>
+            <ul class="bullets">
+              <li>Marketing and management intern, Shaukat Khanum Memorial Cancer Hospital: convinced the management of 200+ shops to host donation boxes.</li>
+              <li>Curriculum development intern, Care Foundation: revised the annual curriculum for underprivileged middle-school students; Best Intern Award in a cohort of 25.</li>
+              <li>Peer tutor, Beaconhouse School System: organised study sessions for AS-Level Physics and Computer Science and matched tutors to students.</li>
             </ul>
           </div>
         </li>
@@ -377,10 +413,47 @@
   </div>
 </section>
 
-<section class="wrap section" id="education" aria-labelledby="education-h">
+<section class="wrap section" id="skills" aria-labelledby="skills-h">
   <div class="section__grid">
     <div class="section__head">
       <span class="badge">04</span>
+      <h2 class="section__title" id="skills-h">Skills</h2>
+    </div>
+    <div class="section__body">
+      <dl class="edu">
+        <div class="edu__row">
+          <dt class="edu__when">AI &amp; ML</dt>
+          <dd class="edu__what skills__list">LLMs, LLM evaluation, LLM-as-a-judge, red teaming, RAG, embeddings and vector search, MCP, agentic workflows, function calling, prompt and context engineering, fine-tuning (LoRA), quantization, vLLM, llama.cpp, Hugging Face Transformers, PyTorch, TensorFlow, CNNs, computer vision, NLP</dd>
+        </div>
+        <div class="edu__row">
+          <dt class="edu__when">Backend &amp; Data</dt>
+          <dd class="edu__what skills__list">Python, FastAPI, Django, Java, Spring Boot, Scala, PostgreSQL, MySQL, MongoDB, DynamoDB, Elasticsearch, RabbitMQ, Celery, Liquibase, Drools, C++</dd>
+        </div>
+        <div class="edu__row">
+          <dt class="edu__when">Cloud &amp; DevOps</dt>
+          <dd class="edu__what skills__list">AWS (Lambda, DynamoDB, SageMaker, Bedrock), Azure (OpenAI Service, AI Foundry), Docker, Kubernetes, Ansible, CI/CD, Grafana, Cloudflare Workers</dd>
+        </div>
+        <div class="edu__row">
+          <dt class="edu__when">Frontend</dt>
+          <dd class="edu__what skills__list">React, Next.js, Angular, TypeScript, Ant Design, DevExtreme, Tailwind CSS, Figma, Flutter</dd>
+        </div>
+        <div class="edu__row">
+          <dt class="edu__when">Testing &amp; QA</dt>
+          <dd class="edu__what skills__list">Playwright, Selenium, Appium, OpenSTF, WCAG and ACT accessibility testing</dd>
+        </div>
+        <div class="edu__row">
+          <dt class="edu__when">Design &amp; media</dt>
+          <dd class="edu__what skills__list">CorelDraw, Adobe Premiere Pro, social media campaigns</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="wrap section" id="education" aria-labelledby="education-h">
+  <div class="section__grid">
+    <div class="section__head">
+      <span class="badge">05</span>
       <h2 class="section__title" id="education-h">Education and honors</h2>
     </div>
     <div class="section__body">
@@ -388,19 +461,38 @@
         <dl class="edu">
           <div class="edu__row">
             <dt class="edu__when">2020 <span aria-hidden="true">→</span><span class="sr">to</span> 2024</dt>
-            <dd class="edu__what"><span class="edu__title">B.Sc. Computer Engineering, Bilkent University</span><span class="edu__detail">CGPA 3.69 · Magna Cum Laude · Full merit scholarship</span></dd>
+            <dd class="edu__what"><span class="edu__title">B.Sc. Computer Engineering, Bilkent University</span><span class="edu__detail">CGPA 3.69 · Magna Cum Laude · Full merit scholarship · High Honor Roll in all 8 semesters</span><span class="edu__courses">Algorithms, Object-Oriented Software Engineering, Database Systems, Programming Languages, Computer Organization, Cloud Computing, Software Validation and Verification, Probability and Statistics, Engineering Management</span></dd>
           </div>
           <div class="edu__row">
             <dt class="edu__when">2023</dt>
-            <dd class="edu__what"><span class="edu__title">Exchange semester, Saarland University</span></dd>
+            <dd class="edu__what"><span class="edu__title">Exchange semester, Saarland University</span><span class="edu__detail">Computer science</span><span class="edu__courses">Machine Learning, High-Level Computer Vision, Foundations of Web Security, Ethics for Nerds</span></dd>
+          </div>
+          <div class="edu__row">
+            <dt class="edu__when">2018 <span aria-hidden="true">→</span><span class="sr">to</span> 2020</dt>
+            <dd class="edu__what"><span class="edu__title">A-Levels, Beaconhouse School System</span><span class="edu__detail">Valedictorian · 4.0 GPA at AS and A-Level · Highest Achiever Award for 4 A*</span></dd>
           </div>
         </dl>
         <div class="honors">
           <h3 class="label">Honors</h3>
           <ul class="honors__list">
-            <li><span class="honors__when">2024 · 1st place</span><span>Bilkentpreneurs Challenge</span></li>
+            <li><span class="honors__when">2024 · 1st place</span><span>Bilkentpreneurs Challenge, 100,000 TL prize</span></li>
             <li><span class="honors__when">2024 · Award</span><span>Best Data Science Project</span></li>
-            <li><span class="honors__when">2024 · Runner-up</span><span>AWS University Engagement</span></li>
+            <li><span class="honors__when">2024 · Runner-up</span><span>AWS University Engagement, 3 universities</span></li>
+            <li><span class="honors__when">2022 · 2nd runner-up</span><span>BusinessPoint&#x27;22, 700+ participants, judged by PepsiCo, P&amp;G, EY, Armut and Audi</span></li>
+            <li><span class="honors__when">2020 <span aria-hidden="true">→</span><span class="sr">to</span> 2024 · Bilkent</span><span>High Honor Roll in all 8 semesters</span></li>
+            <li><span class="honors__when">2019 · Gold medal</span><span>Regional table tennis champion</span></li>
+            <li><span class="honors__when">2018 · Cambridge</span><span>Outstanding Learners Award, regional distinction in O-Level Computer Science</span></li>
+            <li><span class="honors__when">School · Intel ISEF</span><span>National Best of Category for &quot;Earth Battery&quot;, electricity from mud</span></li>
+            <li><span class="honors__when">School · GSEA</span><span>National English contest winner, 1st in Pakistan</span></li>
+          </ul>
+        </div>
+        <div class="honors">
+          <h3 class="label">Leadership</h3>
+          <ul class="honors__list">
+            <li><span class="honors__when">2022 <span aria-hidden="true">→</span><span class="sr">to</span> 2024 · Captain</span><span>Table tennis team; runners-up at Angora Cup 2021</span></li>
+            <li><span class="honors__when">2023 <span aria-hidden="true">→</span><span class="sr">to</span> 2024 · ESN Bilkent</span><span>Ran orientation week for 100+ international exchange students</span></li>
+            <li><span class="honors__when">2021 <span aria-hidden="true">→</span><span class="sr">to</span> 2023 · Vice-president</span><span>Bilkent United: tournaments and screenings for 200+ participants, a team of 20</span></li>
+            <li><span class="honors__when">2019 <span aria-hidden="true">→</span><span class="sr">to</span> 2020 · House captain</span><span>Trials and tournaments for 80+ students in high school</span></li>
           </ul>
         </div>
       </div>
@@ -445,7 +537,7 @@ I've automated everything from crypto trading bots in college, to development wo
 
 Working on an automation or AI problem? Let's talk.
 
-## Selected work
+## Projects
 
 ### Life OS (2025 to now)
 
@@ -499,26 +591,80 @@ Serverless micro-learning platform. LLM-generated skill roadmaps, then daily qui
 ### Applied AI Engineer, TestFabrik AG
 `2023.07 to now` · Saarbrücken, Germany · remote contractor until 2025.03
 
-- Sole architect of the central LLM inference layer that every AI feature on the webMate QA platform runs through (async RabbitMQ transport, multi-provider, rate limiting, cost tracking).
-- Built an LLM and vision based accessibility analysis service from scratch; 45+ W3C test rules authored.
-- Made self-hosted LLM inference 1.64x faster (single-stream) through quantization, a prefix-cache fix and async scheduling, validated against the full-precision model.
+- Sole architect of the central LLM inference layer that every AI feature on the webMate QA platform runs through: tool calling, persisted conversations with compaction, async RabbitMQ transport, tenant rate limiting, cost tracking and EU-hosted Azure OpenAI with per-customer provider selection.
+- Built an LLM and vision based accessibility analysis service from scratch, reaching the highest automated coverage of any tool in the W3C ACT implementation report (https://www.w3.org/WAI/standards-guidelines/act/implementations/webmate-accessibility-workbench/) (53 of 87 WCAG 2.2 rules); 45+ W3C test rules authored.
+- Made self-hosted LLM inference 1.64x faster (single-stream) and raised KV-cache capacity 1.7x on vLLM through quantization, a prefix-cache fix and async scheduling, with 0 of 1,173 high-confidence predictions changed.
+- Built a benchmarking harness that scores candidate LLMs on accuracy, latency and cost against ground-truth accessibility cases on 100+ websites, and used it to evaluate the move from OpenAI to self-hosted models.
+- Cut model cost roughly 3x across a model migration through input preprocessing, request chunking and inference tuning, re-validated against ACT test cases.
+- Built a chatbot testing framework end to end in Scala, modelled on DeepEval and promptfoo: LLM-as-a-judge scoring on custom rubrics, red teaming, test datasets and regression testing.
+- Extended AI-generated findings to German and French, and rolled out the AI microservices on Kubernetes: deployment configuration, pod management, monitoring and debugging.
+- Lead AI feature development through planning, task delegation and code review, owning decisions on model selection, inference providers and GPU infrastructure; directed proofs of concept with local LLMs, including fine-tuning and custom datasets.
+- Lead TestFabrik's side of the LowBarrier (https://lowbarrier.de/) research consortium with DFKI, Fraunhofer IESE and WSC, shaping roadmap, requirements and architecture for WCAG 3.0 conformance.
+- Ran a client proof of concept for webMate, from requirements meetings to a live demo on the client's own product, and worked with product management on beta releases, use cases and UX.
 
 ### Full-Stack Developer, LAYERMARK
 `2022.06 to 2023.07` · Washington, D.C., then remote
 
 - Rebuilt Java Spring backend services with cache management, cutting response times by 60%.
-- Rebuilt the UI as reusable React components, cutting front-end development time by 70%.
+- Rebuilt the UI as reusable React components on Ant Design and DevExtreme, cutting front-end development time by 70%.
+- Introduced a Drools rules engine, so product offerings could be configured without code changes.
+- Built REST API collections in Spring with the matching front-end pages on PostgreSQL, following SOLID practices.
 
 ### Automated Trading Systems Developer, Freelance
 `2021.09 to 2024.04` · Fiverr and Upwork
 
 - Designed and deployed 75+ crypto trading bots for international clients at a 5/5 rating.
+- Integrated Binance, KuCoin, Telegram, Discord and CoinMarketCap through their APIs, websockets and web scraping.
+- Built portfolio synchronisation, smart notifications and real-time technical analysis on live market data.
+- Back-tested strategies on historical candle data and delivered PnL reports with optimisation plans.
 
-## Education and honors
+### Graphic Designer and Social Media Manager, Al-Huda Educational Institute
+`2018.01 to 2020.08` · Alongside school
 
-- B.Sc. Computer Engineering, Bilkent University, 2020 to 2024. CGPA 3.69, Magna Cum Laude, full merit scholarship
-- Exchange semester, Saarland University, 2023
-- Honors: Bilkentpreneurs Challenge 2024 1st place; Best Data Science Project 2024; AWS University Engagement runner-up
+- Illustrated 72 workbooks and school magazines for primary classes in CorelDraw.
+- Designed flyers, posters and video ads for school events and campaigns.
+- Planned and ran a social media campaign that grew the school's Facebook page to 2.1k+ followers.
+
+### Intern and peer tutor, Earlier roles
+`School years` · Internships and tutoring
+
+- Marketing and management intern, Shaukat Khanum Memorial Cancer Hospital: convinced the management of 200+ shops to host donation boxes.
+- Curriculum development intern, Care Foundation: revised the annual curriculum for underprivileged middle-school students; Best Intern Award in a cohort of 25.
+- Peer tutor, Beaconhouse School System: organised study sessions for AS-Level Physics and Computer Science and matched tutors to students.
+
+## Skills
+
+- AI &amp; ML: LLMs, LLM evaluation, LLM-as-a-judge, red teaming, RAG, embeddings and vector search, MCP, agentic workflows, function calling, prompt and context engineering, fine-tuning (LoRA), quantization, vLLM, llama.cpp, Hugging Face Transformers, PyTorch, TensorFlow, CNNs, computer vision, NLP
+- Backend &amp; Data: Python, FastAPI, Django, Java, Spring Boot, Scala, PostgreSQL, MySQL, MongoDB, DynamoDB, Elasticsearch, RabbitMQ, Celery, Liquibase, Drools, C++
+- Cloud &amp; DevOps: AWS (Lambda, DynamoDB, SageMaker, Bedrock), Azure (OpenAI Service, AI Foundry), Docker, Kubernetes, Ansible, CI/CD, Grafana, Cloudflare Workers
+- Frontend: React, Next.js, Angular, TypeScript, Ant Design, DevExtreme, Tailwind CSS, Figma, Flutter
+- Testing &amp; QA: Playwright, Selenium, Appium, OpenSTF, WCAG and ACT accessibility testing
+- Design &amp; media: CorelDraw, Adobe Premiere Pro, social media campaigns
+
+## Education
+
+- B.Sc. Computer Engineering, Bilkent University, 2020 to 2024. CGPA 3.69, Magna Cum Laude, Full merit scholarship, High Honor Roll in all 8 semesters. Coursework: Algorithms, Object-Oriented Software Engineering, Database Systems, Programming Languages, Computer Organization, Cloud Computing, Software Validation and Verification, Probability and Statistics, Engineering Management
+- Exchange semester, Saarland University, 2023. Computer science. Coursework: Machine Learning, High-Level Computer Vision, Foundations of Web Security, Ethics for Nerds
+- A-Levels, Beaconhouse School System, 2018 to 2020. Valedictorian, 4.0 GPA at AS and A-Level, Highest Achiever Award for 4 A*
+
+## Honors
+
+- Bilkentpreneurs Challenge, 100,000 TL prize (2024, 1st place)
+- Best Data Science Project (2024, Award)
+- AWS University Engagement, 3 universities (2024, Runner-up)
+- BusinessPoint'22, 700+ participants, judged by PepsiCo, P&amp;G, EY, Armut and Audi (2022, 2nd runner-up)
+- High Honor Roll in all 8 semesters (2020 to 2024, Bilkent)
+- Regional table tennis champion (2019, Gold medal)
+- Outstanding Learners Award, regional distinction in O-Level Computer Science (2018, Cambridge)
+- National Best of Category for "Earth Battery", electricity from mud (School, Intel ISEF)
+- National English contest winner, 1st in Pakistan (School, GSEA)
+
+## Leadership
+
+- Table tennis team; runners-up at Angora Cup 2021 (2022 to 2024, Captain)
+- Ran orientation week for 100+ international exchange students (2023 to 2024, ESN Bilkent)
+- Bilkent United: tournaments and screenings for 200+ participants, a team of 20 (2021 to 2023, Vice-president)
+- Trials and tournaments for 80+ students in high school (2019 to 2020, House captain)
 
 ## Languages
 

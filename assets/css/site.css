@@ -218,13 +218,8 @@ html:not(.js) .js-only { display: none !important; }
 }
 .media--hatch .media__tag { left: 14px; }
 .media__tag--end { left: auto !important; right: 14px; }
-.media__control {
-  position: absolute; right: 10px; bottom: 10px; z-index: 1;
-  min-height: 40px; padding: 0 14px;
-  background: var(--paper); color: var(--ink); border: 1px solid var(--ink); border-radius: 2px; cursor: pointer;
-  font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
-}
-.media__control:hover { background: var(--surface); }
+/* Videos sit above the card's click-to-expand layer so their controls work. */
+.media--video { z-index: 1; }
 
 /* Sections */
 .section { padding-block: clamp(56px, 7vw, 104px); }
@@ -319,10 +314,12 @@ html:not(.js) .archive-panel { margin-top: 0; }
 .edu-block { display: flex; flex-direction: column; gap: 32px; }
 .edu { border-bottom: 1px solid var(--rule); }
 .edu__row { display: flex; flex-wrap: wrap; column-gap: 40px; row-gap: 8px; border-top: 1px solid var(--rule); padding: 20px 0; }
-.edu__when { flex: 0 0 220px; font-family: var(--mono); font-size: 13px; }
+.edu__when { flex: 0 0 220px; font-family: var(--mono); font-size: 13px; line-height: 1.75; }
 .edu__what { flex: 1 1 420px; display: flex; flex-direction: column; gap: 6px; }
 .edu__title { font-family: var(--serif); font-size: 22px; line-height: 1.25; }
 .edu__detail { font-family: var(--mono); font-size: 13px; color: var(--muted); }
+.edu__courses { font-size: 15px; line-height: 1.55; color: var(--muted); max-width: 70ch; }
+.skills__list { font-family: var(--mono); font-size: 14px; line-height: 1.75; max-width: 70ch; }
 .honors { display: flex; flex-direction: column; gap: 12px; }
 .honors h3 { font-weight: 400; }
 .honors__list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 16px 32px; }
