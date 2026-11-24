@@ -39,6 +39,13 @@ Working on an automation or AI problem? Let's talk.
 - Plan and scope AI features end to end and make the technical calls on models, inference providers and GPU hosting.
 - Represent TestFabrik in the LowBarrier research consortium with DFKI and Fraunhofer IESE on WCAG 3.0 accessibility for mobile apps.
 
+#### More
+
+- Added EU-hosted Azure OpenAI as a second provider, with per-customer provider selection and a config UI so operators can switch providers without code changes.
+- Localized axe-core results and AI-generated findings into German and French with locale-aware prompts, so reports come out in the customer's language, and replaced the legacy locale handling with a Maven-based resource build.
+- Extended accessibility testing from the web to native Android and iOS apps: researched the approach, then shipped the mobile automation and workbench plugin on an OpenSTF device farm, capturing native screenshots, scrolling and accessibility areas across viewports.
+- Built the Jira integration that files test findings as issues, converting HTML reports to Jira markup and collapsing repetitive findings into a few triageable issues; also wrote automated test scripts in Playwright and Selenium.
+
 ### Full-Stack Developer, LAYERMARK
 `2022.06 to 2023.07` · Washington, D.C., then remote
 
@@ -124,7 +131,16 @@ Serverless micro-learning platform. LLM-generated skill roadmaps, then daily qui
 - Bilkentpreneurs Challenge, 100,000 TL prize (2024 · 1st place)
 - Best Data Science Project, across a cohort of about 200 (2024 · Award)
 - Best Project, AWS University Engagement, against teams from 3 universities (2024 · Runner-up)
+- Best Project, Campus Connect, one of 5 across a cohort of about 180 (2024 · Award)
 - BusinessPoint'22, 700+ participants, judged by PepsiCo, P&G, EY, Armut and Audi (2022 · 2nd runner-up)
+- Angora Cup, as Bilkent table tennis team captain (2021 · Runners-up)
+
+#### More
+
+- A-Level Highest Achiever Award for 4 A*, valedictorian (2020 · Beaconhouse)
+- Regional table tennis champion (2019 · Gold medal)
+- Best Intern Award, cohort of 25 (2019 · CARE Foundation)
+- Outstanding Learners Award, best O-Level Computer Science result in the region (2018 · Cambridge)
 
 ## Languages
 

@@ -264,6 +264,13 @@ html:not(.js) .card-toggle { cursor: text; }
 }
 html:not(.js) .card:hover .card-toggle { text-decoration: none; }
 .card__hint { font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; color: var(--accent); white-space: nowrap; }
+/* Text-style expand control for long experience entries, matching the card hint. */
+.more-toggle {
+  align-self: flex-start; background: none; border: 0; padding: 0; cursor: pointer;
+  font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; color: var(--accent);
+  min-height: 32px; display: inline-flex; align-items: center; gap: 4px;
+}
+.more-toggle:hover [data-more-label] { text-decoration: underline; text-underline-offset: 3px; }
 .card__summary { font-size: 16px; line-height: 1.55; }
 .facts {
   display: grid; grid-template-columns: 64px 1fr; column-gap: 12px; row-gap: 8px;
@@ -275,13 +282,13 @@ html:not(.js) .card:hover .card-toggle { text-decoration: none; }
 .facts dd.mono { font-size: 13px; line-height: 1.6; }
 .facts__list { display: flex; flex-direction: column; gap: 6px; }
 .facts__list li { position: relative; padding-left: 16px; }
-.facts__list li::before { content: "›"; position: absolute; left: 0; color: var(--accent); font-family: var(--mono); }
+.facts__list li::before { content: ""; position: absolute; left: 1px; top: 0.6em; width: 5px; height: 5px; background: var(--accent); }
 .card__more { border-top: 1px dashed var(--rule); padding-top: 12px; }
 .card__more > .media { margin-bottom: 14px; }
 .ticks, .bullets { display: flex; flex-direction: column; }
 .ticks { gap: 8px; font-size: 15px; line-height: 1.5; }
 .ticks li, .bullets li { position: relative; padding-left: 20px; }
-.ticks li::before { content: "›"; position: absolute; left: 0; color: var(--accent); font-family: var(--mono); }
+.ticks li::before { content: ""; position: absolute; left: 1px; top: 0.6em; width: 5px; height: 5px; background: var(--accent); }
 
 .archive-block { display: flex; flex-direction: column; gap: 8px; }
 .archive-block .btn { align-self: flex-start; }

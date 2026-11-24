@@ -80,6 +80,19 @@
     });
   });
 
+  // Long experience entries: extra bullets stay in the HTML and fold away under a text toggle.
+  document.querySelectorAll('[data-more-toggle]').forEach(function (button) {
+    var panel = document.getElementById(button.getAttribute('aria-controls'));
+    var label = button.querySelector('[data-more-label]');
+    var sign = button.querySelector('[data-more-sign]');
+    if (!panel) return;
+    var count = panel.querySelectorAll('li').length;
+    disclosure(button, panel, function (open) {
+      label.textContent = open ? 'Show less' : 'Show ' + count + ' more';
+      sign.textContent = open ? '−' : '+';
+    });
+  });
+
   var archiveToggle = document.querySelector('[data-archive-toggle]');
   if (archiveToggle) {
     var archive = document.getElementById(archiveToggle.getAttribute('aria-controls'));
