@@ -110,7 +110,7 @@ Serverless micro-learning platform. LLM-generated skill roadmaps, then daily qui
 ## Skills
 
 - AI & ML: LLMs, LLM evaluation, agentic workflows, MCP, RAG, vLLM, quantization, fine-tuning (LoRA), PyTorch, computer vision
-- Backend & Data: Python, Java, Scala, FastAPI, Spring Boot, PostgreSQL, MongoDB, Elasticsearch, RabbitMQ, DynamoDB
+- Backend & Data: Python, Java, Scala, FastAPI, Spring Boot, PostgreSQL, MongoDB, Elasticsearch, RabbitMQ
 - Cloud & DevOps: AWS (Lambda, DynamoDB, SageMaker, Bedrock), Azure (OpenAI Service, AI Foundry), Docker, Kubernetes, CI/CD, Cloudflare Workers, Grafana, Ansible
 - Frontend & Testing: React, Next.js, TypeScript, Angular, Flutter, Tailwind CSS, Playwright, Selenium, Appium, WCAG and ACT accessibility testing
 
