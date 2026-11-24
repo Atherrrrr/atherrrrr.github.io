@@ -2,7 +2,6 @@
 (function () {
   'use strict';
 
-  var EMAIL = 'maheratharilyas@gmail.com';
   var root = document.documentElement;
   var status = document.querySelector('[data-status]');
 
@@ -81,19 +80,6 @@
     });
   });
 
-  // Long experience entries: headline bullets stay visible, the rest folds away.
-  document.querySelectorAll('[data-more-toggle]').forEach(function (button) {
-    var panel = document.getElementById(button.getAttribute('aria-controls'));
-    var label = button.querySelector('[data-more-label]');
-    var sign = button.querySelector('[data-more-sign]');
-    if (!panel) return;
-    var count = panel.querySelectorAll('li').length;
-    disclosure(button, panel, function (open) {
-      label.textContent = open ? 'Hide full detail' : 'Show full detail (' + count + ' more)';
-      sign.textContent = open ? '−' : '+';
-    });
-  });
-
   var archiveToggle = document.querySelector('[data-archive-toggle]');
   if (archiveToggle) {
     var archive = document.getElementById(archiveToggle.getAttribute('aria-controls'));
@@ -110,9 +96,16 @@
 
   root.classList.add('is-ready');
 
-  // Copy email. The address is also shown as text next to each button.
+  // Copy email. The address is never in the page source; it is assembled from parts on click,
+  // so scrapers reading the HTML, markdown or this file as text do not find it.
   var copyButtons = document.querySelectorAll('[data-copy-email]');
   var copyTimer;
+
+  function emailAddress() {
+    var user = ['maher', 'athar', 'ilyas'].join('');
+    var domain = ['gmail', 'com'].join('.');
+    return user + String.fromCharCode(64) + domain;
+  }
 
   function setCopyLabels(text) {
     copyButtons.forEach(function (b) {
@@ -121,26 +114,29 @@
     });
   }
 
-  function copied(ok) {
+  function copied(ok, address) {
     clearTimeout(copyTimer);
     if (ok) {
-      setCopyLabels('Email copied');
+      setCopyLabels('Copied');
       announce('Email address copied to clipboard.');
     } else {
-      announce('Copy failed. The address is ' + EMAIL);
+      // Clipboard blocked: show the address on the button so it can still be read.
+      setCopyLabels(address);
+      announce('Copy failed. The address is ' + address);
     }
     copyTimer = setTimeout(function () {
       setCopyLabels('Copy email');
       if (status) status.textContent = '';
-    }, 2400);
+    }, ok ? 2400 : 8000);
   }
 
   copyButtons.forEach(function (b) {
     b.addEventListener('click', function () {
+      var address = emailAddress();
       try {
-        navigator.clipboard.writeText(EMAIL).then(function () { copied(true); }, function () { copied(false); });
+        navigator.clipboard.writeText(address).then(function () { copied(true, address); }, function () { copied(false, address); });
       } catch (e) {
-        copied(false);
+        copied(false, address);
       }
     });
   });
