@@ -43,15 +43,16 @@ Personal analytics MCP server and reporting agent. Normalizes calendar, habits, 
 
 AI interview coach. LLM-generated questions, asked by a lip-synced synthetic interviewer, with every answer scored.
 
-- Result: 1st place, Bilkentpreneurs Challenge 2024 · Best Data Science Project.
+- Result: 1st place, Bilkentpreneurs Challenge 2024, winning a 100,000 TL prize.
+- Result: Best Data Science Project award, across about 200 graduating students.
 - Stack: FastAPI · Next.js · MongoDB
-- Final-year senior project, built by a team of five; Best Data Science Project across a cohort of about 200.
+- Final-year senior project, built by a team of five.
 - An LLM generates the interview questions.
 - A lip-synced synthetic interviewer asks them on screen.
 - CNN-based models score emotion and body language while the candidate answers.
 - An LLM evaluates the content of each answer, with speech-to-text and OCR in the pipeline.
 - Study resources are scraped for the candidate's weakest areas.
-- Won 1st place and a 100,000 TL prize at the Bilkentpreneurs Challenge, covered by Bilkent News (https://bilkentnews.bilkent.edu.tr/?p=6972).
+- The Bilkentpreneurs win was covered by Bilkent News (https://bilkentnews.bilkent.edu.tr/?p=6972).
 
 ### School management system (2026 to now)
 

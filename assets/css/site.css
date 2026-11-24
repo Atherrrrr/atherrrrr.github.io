@@ -274,6 +274,9 @@ html:not(.js) .card:hover .card-toggle { text-decoration: none; }
 .facts .facts__result { color: var(--accent); }
 .facts dd { font-size: 15px; line-height: 1.5; }
 .facts dd.mono { font-size: 13px; line-height: 1.6; }
+.facts__list { display: flex; flex-direction: column; gap: 6px; }
+.facts__list li { position: relative; padding-left: 16px; }
+.facts__list li::before { content: "›"; position: absolute; left: 0; color: var(--accent); font-family: var(--mono); }
 .card__more { border-top: 1px dashed var(--rule); padding-top: 12px; }
 .ticks, .bullets { display: flex; flex-direction: column; }
 .ticks { gap: 8px; font-size: 15px; line-height: 1.5; }
