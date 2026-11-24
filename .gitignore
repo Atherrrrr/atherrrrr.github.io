@@ -8,3 +8,6 @@ Career Master Context*
 
 # CV LaTeX source and build output; only the built PDF in cv/ is published
 cv/src/
+
+# Local notes for this repo
+CONTEXT.md
