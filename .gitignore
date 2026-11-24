@@ -5,3 +5,6 @@ videos/
 # Private career notes (phone, email, interview prep); never commit
 Career Master Context*
 *.private.md
+
+# CV LaTeX source and build output; only the built PDF in cv/ is published
+cv/src/
