@@ -161,8 +161,6 @@ html:not(.js) .js-only { display: none !important; }
   font-family: var(--mono); font-size: 12px; line-height: 1.2;
 }
 .toggle:hover { color: var(--accent); }
-.toggle__dot { width: 10px; height: 10px; border: 1px solid var(--ink); background: transparent; }
-[data-theme="dark"] .toggle__dot { background: var(--ink); }
 .switch {
   width: 28px; height: 14px; border: 1px solid var(--ink); border-radius: 8px;
   display: flex; align-items: center; justify-content: flex-start; padding: 0 2px;

@@ -1,4 +1,4 @@
-// Adds a content hash to the CSS and JS URLs in index.html and 404.html (site.css?v=1a2b3c4d),
+// Adds a content hash to the CSS, JS and portrait URLs in index.html and 404.html (site.css?v=1a2b3c4d),
 // so browsers fetch the new file as soon as it changes instead of pairing a new page with an
 // old cached script. Run after editing assets: node scripts/stamp-assets.mjs
 import { readFileSync, writeFileSync } from 'node:fs';
@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
-const assets = ['assets/css/site.css', 'assets/js/site.js'];
+const assets = ['assets/css/site.css', 'assets/js/site.js', 'assets/media/portrait.webp'];
 
 const hashes = Object.fromEntries(assets.map(a => [
   a, createHash('sha256').update(readFileSync(join(root, a))).digest('hex').slice(0, 8),

@@ -18,7 +18,7 @@
 
   function syncTheme() {
     var dark = root.getAttribute('data-theme') === 'dark';
-    if (themeToggle) themeToggle.setAttribute('aria-pressed', String(dark));
+    if (themeToggle) themeToggle.setAttribute('aria-checked', String(dark));
     if (themeColor) themeColor.setAttribute('content', dark ? '#14130F' : '#F7F5EF');
   }
 
