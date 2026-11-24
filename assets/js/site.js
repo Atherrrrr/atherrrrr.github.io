@@ -107,25 +107,27 @@
     return user + String.fromCharCode(64) + domain;
   }
 
-  function setCopyLabels(text) {
-    copyButtons.forEach(function (b) {
-      var label = b.querySelector('[data-copy-label]');
-      if (label) label.textContent = text;
-    });
+  // Each button keeps its own resting label ("Copy email", or "Email" in the footer).
+  function label(b) { return b.querySelector('[data-copy-label]'); }
+  copyButtons.forEach(function (b) { if (label(b)) b.setAttribute('data-copy-rest', label(b).textContent); });
+
+  function resetCopyLabels() {
+    copyButtons.forEach(function (b) { if (label(b)) label(b).textContent = b.getAttribute('data-copy-rest'); });
   }
 
-  function copied(ok, address) {
+  function copied(button, ok, address) {
     clearTimeout(copyTimer);
+    resetCopyLabels();
     if (ok) {
-      setCopyLabels('Copied');
+      label(button).textContent = 'Copied';
       announce('Email address copied to clipboard.');
     } else {
       // Clipboard blocked: show the address on the button so it can still be read.
-      setCopyLabels(address);
+      label(button).textContent = address;
       announce('Copy failed. The address is ' + address);
     }
     copyTimer = setTimeout(function () {
-      setCopyLabels('Copy email');
+      resetCopyLabels();
       if (status) status.textContent = '';
     }, ok ? 2400 : 8000);
   }
@@ -134,9 +136,9 @@
     b.addEventListener('click', function () {
       var address = emailAddress();
       try {
-        navigator.clipboard.writeText(address).then(function () { copied(true, address); }, function () { copied(false, address); });
+        navigator.clipboard.writeText(address).then(function () { copied(b, true, address); }, function () { copied(b, false, address); });
       } catch (e) {
-        copied(false, address);
+        copied(b, false, address);
       }
     });
   });

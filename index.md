@@ -126,14 +126,6 @@ Serverless micro-learning platform. LLM-generated skill roadmaps, then daily qui
 - Best Project, AWS University Engagement, against teams from 3 universities (2024 · Runner-up)
 - BusinessPoint'22, 700+ participants, judged by PepsiCo, P&G, EY, Armut and Audi (2022 · 2nd runner-up)
 
-## Leadership
-
-Table tennis team captain at Bilkent (2022 to 2024) and ESN Bilkent orientation organizer for 100+ exchange students.
-
 ## Languages
 
 English (C2), Urdu (C2), Turkish (A2), German (A2)
-
-## Outside work
-
-Table tennis (2019 regional champion) and kickboxing.
