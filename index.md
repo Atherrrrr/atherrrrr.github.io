@@ -26,6 +26,74 @@ I've automated everything from crypto trading bots in college, to development wo
 
 Working on an automation or AI problem? Let's talk.
 
+## Experience
+
+### Applied AI Engineer, TestFabrik AG
+`2023.07 to now` · Saarbrücken, Germany · remote contractor until 2025.03
+
+- Sole architect of the central LLM inference layer that every AI feature on the webMate QA platform runs through, replacing provider-specific OpenAI calls: tool calling, persisted conversations with compaction, tenant rate limiting, token and cost tracking, and provider adapters.
+- Built an LLM and vision based accessibility analysis service from scratch, giving webMate the highest automated coverage of any tool in the W3C ACT implementation report (https://www.w3.org/WAI/standards-guidelines/act/implementations/webmate-accessibility-workbench/). Separately, I automated 53 of the 87 WCAG 2.2 rules myself (45 fully, 8 partially).
+- Made self-hosted LLM inference 1.64x faster (single-stream) and raised KV-cache capacity 1.7x on vLLM through quantization, a prefix-cache fix and async scheduling, with 0 of 1,173 high-confidence predictions changed.
+- Built a benchmarking harness that scores candidate LLMs on accuracy, latency and cost against ground-truth accessibility cases on 100+ websites, and used it to evaluate the move from OpenAI to self-hosted models.
+- Built a chatbot testing framework end to end in Scala, modelled on DeepEval and promptfoo concepts: simulated conversations scored by an LLM judge on custom rubrics, red teaming with prompt-injection attacks on system prompts, test datasets and regression testing.
+- Cut model cost roughly 3x across a model migration through input preprocessing, request chunking and inference tuning, re-validated against ACT test cases.
+- Lead AI feature development through planning, scoping, task delegation and code review: I direct one engineer full time, bring in DevOps and other engineers when the work needs them, and own decisions on model selection, inference providers and GPU infrastructure.
+- Lead TestFabrik's side of the LowBarrier (https://lowbarrier.de/) research consortium with DFKI, Fraunhofer IESE and WSC on WCAG 3.0 accessibility for mobile apps: roadmap, requirements, architecture, user stories and WCAG evaluation matrices.
+
+#### Inference platform
+
+- Evaluated HTTP against message queues and chose async RabbitMQ transport, tested the interface from Python and Scala clients, and moved existing NLP and embedding generation onto the platform.
+- Provisioned EU-hosted Azure OpenAI dev and prod resources as a second provider, with a default provider per instance, per-customer provider selection and a config UI for operators.
+
+#### Self-hosted models
+
+- Traced zero prefix-cache hits to the model's forced attention block size; the fix took cache hits on multi-turn chats from 0% to 46%. Rejected a 2.12x faster 4-bit quantization because it failed a vision task and gave no end-to-end gain.
+- Deployed the in-house vLLM server as a hybrid cloud and on-prem alternative to hosted providers, evaluated GPU hosting with Hetzner and other European providers, and rolled out the AI microservices on Kubernetes and OKD.
+
+#### Accessibility
+
+- Checks cover headings, labels, form instructions, links in context, language, readability and DOM relationships, run in parallel, in several languages and only against the requirements that apply.
+- Localized axe-core results and AI-generated findings into German and French: locale-aware prompts and a Maven-based resource build replacing legacy locale handling.
+- Researched native mobile accessibility testing, then shipped the Mobile Automation Run and Workbench plugin for Android and iOS on an OpenSTF device farm: native screenshots, scrolling and accessibility rectangles across viewports.
+- Built the Jira integration that turns test findings into issues, with aggregation that collapses repetitive findings into triageable ones, plus automated test scripts in Playwright and Selenium.
+
+#### Clients and prototypes
+
+- Ran a client proof of concept for webMate, from requirements meetings to a live demo on the client's own product, and worked with product management on beta releases, use cases and UX.
+- Directed proofs of concept with local LLMs, including fine-tuning and custom datasets, and onboarded part-time engineers and interns.
+- Built a Raspberry Pi captcha solver for a robotic hand, combining hardware control with AI recognition.
+
+### Full-Stack Developer, LAYERMARK
+`2022.06 to 2023.07` · Washington, D.C., then remote
+
+- Rebuilt Java Spring backend services with cache management, cutting response times by 60%.
+- Rebuilt the UI as reusable React components on Ant Design and DevExtreme, cutting front-end development time by 70%.
+- Introduced a Drools rules engine, so product offerings could be configured without code changes.
+- Built REST API collections in Spring with the matching front-end pages on PostgreSQL.
+
+### Automated Trading Systems Developer, Freelance
+`2021.09 to 2024.04` · Fiverr and Upwork
+
+- Designed and deployed 75+ crypto trading bots for international clients at a 5/5 rating.
+- Integrated Binance, KuCoin, Telegram, Discord and CoinMarketCap through their APIs, websockets and web scraping.
+- Built the Python sync and state layer behind them: concurrent price feeds, order execution and portfolio tracking across exchanges, with smart notifications and real-time technical analysis.
+- Back-tested strategies on historical candle data and delivered PnL reports with optimisation plans.
+
+### Graphic Designer and Social Media Manager, Al-Huda Educational Institute
+`2018.01 to 2020.08` · Alongside school
+
+- Illustrated 72 workbooks and school magazines for primary classes in CorelDraw.
+- Designed flyers, posters and video ads for school events and campaigns.
+- Planned and ran the school's social media, growing its YouTube channel to 17k+ subscribers and its Facebook page to 2.1k+ followers.
+
+### Intern, tutor and events lead, Earlier roles
+`2016 to 2020` · Internships, tutoring and events
+
+- Head of Events, Beaconhouse School System (2018 to 2020): ran table tennis tournaments for 100+ participants.
+- Curriculum development intern, CARE Foundation (summer 2019): revised the annual curriculum for underprivileged middle-school students; Best Intern Award in a cohort of 25.
+- Peer tutor, Beaconhouse School System (2018 to 2019): organised study sessions for AS-Level Physics and Computer Science and matched tutors to students.
+- Marketing and management intern, Shaukat Khanum Memorial Cancer Hospital (summer 2016): convinced the management of 200+ shops to host donation boxes.
+
 ## Projects
 
 ### Life OS (2025 to now)
@@ -93,76 +161,6 @@ Fast multiple-choice drill app for learning German. Tap, see the answer, next. N
 Accent and articulation practice app with a step-by-step roadmap of sound fixes.
 
 - Stack: Flutter · FastAPI · Supabase · Azure Speech
-
-## Experience
-
-### Applied AI Engineer, TestFabrik AG
-`2023.07 to now` · Saarbrücken, Germany · remote contractor until 2025.03
-
-#### Inference platform
-
-- Sole architect of the central LLM inference layer that every AI feature on the webMate QA platform runs through, replacing provider-specific OpenAI calls: tool calling, persisted conversations with compaction, tenant rate limiting, token and cost tracking, and provider adapters.
-- Evaluated HTTP against message queues and chose async RabbitMQ transport, tested the interface from Python and Scala clients, and moved existing NLP and embedding generation onto the platform.
-- Provisioned EU-hosted Azure OpenAI dev and prod resources as a second provider, with a default provider per instance, per-customer provider selection and a config UI for operators.
-
-#### Self-hosted models
-
-- Made self-hosted LLM inference 1.64x faster (single-stream) and raised KV-cache capacity 1.7x on vLLM through quantization, a prefix-cache fix and async scheduling, with 0 of 1,173 high-confidence predictions changed.
-- Traced zero prefix-cache hits to the model's forced attention block size; the fix took cache hits on multi-turn chats from 0% to 46%. Rejected a 2.12x faster 4-bit quantization because it failed a vision task and gave no end-to-end gain.
-- Deployed the in-house vLLM server as a hybrid cloud and on-prem alternative to hosted providers, evaluated GPU hosting with Hetzner and other European providers, and rolled out the AI microservices on Kubernetes and OKD.
-
-#### Evaluation and cost
-
-- Built a benchmarking harness that scores candidate LLMs on accuracy, latency and cost against ground-truth accessibility cases on 100+ websites, and used it to evaluate the move from OpenAI to self-hosted models.
-- Cut model cost roughly 3x across a model migration through input preprocessing, request chunking and inference tuning, re-validated against ACT test cases.
-- Built a chatbot testing framework end to end in Scala, modelled on DeepEval and promptfoo concepts: simulated conversations scored by an LLM judge on custom rubrics, red teaming with prompt-injection attacks on system prompts, test datasets and regression testing.
-
-#### Accessibility
-
-- Built an LLM and vision based accessibility analysis service from scratch, giving webMate the highest automated coverage of any tool in the W3C ACT implementation report (https://www.w3.org/WAI/standards-guidelines/act/implementations/webmate-accessibility-workbench/). Separately, I automated 53 of the 87 WCAG 2.2 rules myself (45 fully, 8 partially).
-- Checks cover headings, labels, form instructions, links in context, language, readability and DOM relationships, run in parallel, in several languages and only against the requirements that apply.
-- Localized axe-core results and AI-generated findings into German and French: locale-aware prompts and a Maven-based resource build replacing legacy locale handling.
-- Researched native mobile accessibility testing, then shipped the Mobile Automation Run and Workbench plugin for Android and iOS on an OpenSTF device farm: native screenshots, scrolling and accessibility rectangles across viewports.
-- Built the Jira integration that turns test findings into issues, with aggregation that collapses repetitive findings into triageable ones, plus automated test scripts in Playwright and Selenium.
-
-#### Leadership and clients
-
-- Lead AI feature development through planning, scoping, task delegation and code review: I direct one engineer full time, bring in DevOps and other engineers when the work needs them, and own decisions on model selection, inference providers and GPU infrastructure.
-- Lead TestFabrik's side of the LowBarrier (https://lowbarrier.de/) research consortium with DFKI, Fraunhofer IESE and WSC on WCAG 3.0 accessibility for mobile apps: roadmap, requirements, architecture, user stories and WCAG evaluation matrices.
-- Ran a client proof of concept for webMate, from requirements meetings to a live demo on the client's own product, and worked with product management on beta releases, use cases and UX.
-- Directed proofs of concept with local LLMs, including fine-tuning and custom datasets, and onboarded part-time engineers and interns.
-- Built a Raspberry Pi captcha solver for a robotic hand, combining hardware control with AI recognition.
-
-### Full-Stack Developer, LAYERMARK
-`2022.06 to 2023.07` · Washington, D.C., then remote
-
-- Rebuilt Java Spring backend services with cache management, cutting response times by 60%.
-- Rebuilt the UI as reusable React components on Ant Design and DevExtreme, cutting front-end development time by 70%.
-- Introduced a Drools rules engine, so product offerings could be configured without code changes.
-- Built REST API collections in Spring with the matching front-end pages on PostgreSQL.
-
-### Automated Trading Systems Developer, Freelance
-`2021.09 to 2024.04` · Fiverr and Upwork
-
-- Designed and deployed 75+ crypto trading bots for international clients at a 5/5 rating.
-- Integrated Binance, KuCoin, Telegram, Discord and CoinMarketCap through their APIs, websockets and web scraping.
-- Built the Python sync and state layer behind them: concurrent price feeds, order execution and portfolio tracking across exchanges, with smart notifications and real-time technical analysis.
-- Back-tested strategies on historical candle data and delivered PnL reports with optimisation plans.
-
-### Graphic Designer and Social Media Manager, Al-Huda Educational Institute
-`2018.01 to 2020.08` · Alongside school
-
-- Illustrated 72 workbooks and school magazines for primary classes in CorelDraw.
-- Designed flyers, posters and video ads for school events and campaigns.
-- Planned and ran the school's social media, growing its YouTube channel to 17k+ subscribers and its Facebook page to 2.1k+ followers.
-
-### Intern, tutor and events lead, Earlier roles
-`2016 to 2020` · Internships, tutoring and events
-
-- Head of Events, Beaconhouse School System (2018 to 2020): ran table tennis tournaments for 100+ participants.
-- Curriculum development intern, CARE Foundation (summer 2019): revised the annual curriculum for underprivileged middle-school students; Best Intern Award in a cohort of 25.
-- Peer tutor, Beaconhouse School System (2018 to 2019): organised study sessions for AS-Level Physics and Computer Science and matched tutors to students.
-- Marketing and management intern, Shaukat Khanum Memorial Cancer Hospital (summer 2016): convinced the management of 200+ shops to host donation boxes.
 
 ## Skills
 

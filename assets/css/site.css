@@ -278,6 +278,7 @@ html:not(.js) .card:hover .card-toggle { text-decoration: none; }
 .facts__list li { position: relative; padding-left: 16px; }
 .facts__list li::before { content: "›"; position: absolute; left: 0; color: var(--accent); font-family: var(--mono); }
 .card__more { border-top: 1px dashed var(--rule); padding-top: 12px; }
+.card__more > .media { margin-bottom: 14px; }
 .ticks, .bullets { display: flex; flex-direction: column; }
 .ticks { gap: 8px; font-size: 15px; line-height: 1.5; }
 .ticks li, .bullets li { position: relative; padding-left: 20px; }
@@ -310,6 +311,8 @@ html:not(.js) .archive-panel { margin-top: 0; }
 .bullets li::before { content: "·"; position: absolute; left: 0; color: var(--muted); }
 .bullets__group { font-weight: 400; color: var(--accent); margin: 16px 0 -6px; }
 .bullets__group:first-of-type { margin-top: 4px; }
+.timeline__what > .btn { align-self: flex-start; margin-top: 4px; }
+.more-detail { display: flex; flex-direction: column; gap: 12px; }
 .hl {
   font-weight: 600; padding-bottom: 1px;
   background: linear-gradient(var(--hi), var(--hi)) left bottom / 100% 2px no-repeat;

@@ -74,9 +74,23 @@
   document.querySelectorAll('.card-toggle').forEach(function (button) {
     var panel = document.getElementById(button.getAttribute('aria-controls'));
     var hint = button.closest('.card').querySelector('.card__hint');
+    var closedHint = (hint && hint.getAttribute('data-hint-closed')) || '+ Details';
     if (!panel) return;
     disclosure(button, panel, function (open) {
-      if (hint) hint.textContent = open ? '− Less' : '+ Details';
+      if (hint) hint.textContent = open ? '− Less' : closedHint;
+    });
+  });
+
+  // Long experience entries: headline bullets stay visible, the rest folds away.
+  document.querySelectorAll('[data-more-toggle]').forEach(function (button) {
+    var panel = document.getElementById(button.getAttribute('aria-controls'));
+    var label = button.querySelector('[data-more-label]');
+    var sign = button.querySelector('[data-more-sign]');
+    if (!panel) return;
+    var count = panel.querySelectorAll('li').length;
+    disclosure(button, panel, function (open) {
+      label.textContent = open ? 'Hide full detail' : 'Show full detail (' + count + ' more)';
+      sign.textContent = open ? '−' : '+';
     });
   });
 
@@ -132,6 +146,7 @@
   });
 
   // Media: muted loops play only in view and never under prefers-reduced-motion.
+  // Videos marked data-manual (inside expanded card details) never autoplay; they only pause when out of view.
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   var players = [];
 
@@ -145,6 +160,7 @@
     var userPaused = false;
     var autoPausing = false;
     var inView = false;
+    var manual = video.hasAttribute('data-manual');
 
     function play() {
       var p = video.play();
@@ -156,8 +172,8 @@
       video.pause();
     }
     function update() {
-      if (inView && !userPaused && !reduceMotion.matches && !video.closest('[hidden]')) play();
-      else pause();
+      if (inView && !manual && !userPaused && !reduceMotion.matches && !video.closest('[hidden]')) play();
+      else if (!manual || !inView || video.closest('[hidden]')) pause();
     }
 
     video.addEventListener('pause', function () {
